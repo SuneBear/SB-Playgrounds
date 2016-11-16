@@ -1,0 +1,73 @@
+@import url('../../styles/bases.css');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+  font-family: Lora, george, serif;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: all 318ms;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-header {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.project-header .title {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.project-header .desc {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.filter-container {
+  display: flex;
+  width: 806px;
+  height: 304px;
+  margin: 0 auto;
+  color: #CCCCCC;
+  border: 2px dotted currentColor;
+}
+
+.filter-container .item-image {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+}
+
+.filter-container .item-image .btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 318ms;
+}
+
+.filter-container .item-image:hover .btn {
+  opacity: 1;
+}
+
+.filter-container .gap-line {
+  width: 2px;
+  height: 100%;
+  border-left: 2px dotted currentColor;
+}
+
