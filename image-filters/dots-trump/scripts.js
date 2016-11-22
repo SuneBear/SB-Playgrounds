@@ -154,7 +154,7 @@ void function () {
     this.$downloadImageBtn = document.querySelector('.download-image')
 
     this.config = { // Static
-      defaultImagePath: '../../_assets/brown-bear.jpg'
+      defaultImagePath: '../../assets/brown-bear.jpg'
     }
 
     this.states = { // Dynamic
