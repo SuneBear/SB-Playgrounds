@@ -194,7 +194,7 @@ void function () {
     var self = this
     utils.getBase64FromImageUrl(this.config.defaultImagePath, function (dataURL) {
       var imageName = self.config.defaultImagePath.split('/')
-      imageName = imageName.pop().replace(/\.(.*)?$/, '')
+      imageName = imageName.pop().replace(/\.(.[^\.]*)?$/, '')
       self.updateStates('imageName', imageName)
       self.updateStates('sourceImage', dataURL)
     })
