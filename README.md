@@ -5,7 +5,7 @@ P.S: All these source code can be run directly in a modern browser, because thes
 - [Todo List](./src/applications/todolist-koa-graphql-react-relay) (based on Koa, GraphQL, React, Relay) - A fork of TodoMVC from [koa-graphql-relay-example](https://github.com/chentsulin/koa-graphql-relay-example).
 
 ## Games
-- Nil
+- [Peaceful Roguelike Wonderland](./src/games/peaceful-roguelike-wonderland) - Take a journey into peaceful roguelike wonderland without "dungeon" danger. [Play it now](https://sunebear.github.io/SB-Playgrounds/games/peaceful-roguelike-wonderland)
 
 ## Image Filters
 - [Dots Trump](./src/image-filters/dots-trump) - Make Every Image Dotty Again! [Try it now](https://sunebear.github.io/SB-Playgrounds/image-filters/dots-trump)

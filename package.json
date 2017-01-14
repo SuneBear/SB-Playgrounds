@@ -5,9 +5,11 @@
   "author": "SuneBear <hi@sunebear.com>",
   "license": "MIT",
   "scripts": {
+    "start": "browser-sync start --server src --files src/**/*",
     "deploy": "gh-pages -d src"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.6",
     "gh-pages": "^0.11.0"
   }
 }
