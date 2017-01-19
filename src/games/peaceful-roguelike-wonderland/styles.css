@@ -2,12 +2,12 @@
 
 /* == Container == */
 
-// @TODO: Mobile-Friendly Responsive Design
+/* @TODO: Mobile-Friendly Responsive Design */
 html,
 body,
 .gameContainer {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .gameContainer {
@@ -15,13 +15,3 @@ body,
 }
 
 /* == Game == */
-
-/* ==== HUD View ==== */
-.hudView {
-
-}
-
-/* ==== Panel View ==== */
-.panelView {
-
-}

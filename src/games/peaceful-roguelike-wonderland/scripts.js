@@ -4,9 +4,15 @@ void function () {
  * Peaceful Roguelike Wonderland
  *
  * @Project URL: https://github.com/SuneBear/SB-Playgrounds/tree/master/src/games/peaceful-roguelike-wonderland
+ *
+ * @Dependences:
+ *  - CSJS - Write modular, scoped CSS with valid JavaScript
+ *  - Maquette - Pure and simple virtual DOM library
+ *
  * @Code Overview:
  *  - Utils
  *  |-- compose
+ *  |-- capitalize
  *  |-- keymap
  *  - Roguelike
  *  - Data Layer: Redux-like Pattern
@@ -16,11 +22,25 @@ void function () {
  *  |-- Store Core
  *  - View Component Layer
  *  |-- Library & Engine
- *  |-- Views
+ *  |--|-- Keyboard Listener
+ *  |--|-- Sound Manager
+ *  |--|-- Hero-Focused Viewport
+ *  |-- Mixin: Currently just a sorted feature without interfering, please improve me...
+ *  |--|-- Mixin with Component (Deprecated)
+ *  |--|-- VNode Mixin (Dependence on Maquette)
+ *  |--|-- Style Mixin (Dependence on CSJS)
+ *  |-- View
+ *  |--|-- Base View
  *  |--|-- Bottom Views: UI, High Order
  *  |--|-- Top Views: BLL, Singleton
  *  |-- Game Main
  *  - Init
+ *
+ * @List of Abbrs. of View Component:
+ *  - h: HyperScript implemented by Maquette
+ *  - hc: Include view component in HyperScript
+ *  - s: Object of CSJS styles
+ *  - sc: classNames util
  */
 
 /* == Utils == */
@@ -32,10 +52,15 @@ utils.compose = (...fns) => arg => {
   return fns.reduceRight((composed, fn) => fn(composed), arg)
 }
 
+// Capitalize
+utils.capitalize = str => {
+  return str && str[0].toUpperCase() + str.slice(1)
+}
+
 // keycode <=> keyname
 utils.keymap = (() => {
-  // Incomplete keycodes map
-  const keycodesMap = {
+  // Incomplete keyCodes map
+  const keyCodesMap = {
     13: 'enter',
     27: 'escape',
     32: 'spacebar',
@@ -47,20 +72,20 @@ utils.keymap = (() => {
   }
 
   // Append numbers
-  for (let i = 48; i < 58; i++) keycodesMap[i] = i - 48
+  for (let i = 48; i < 58; i++) keyCodesMap[i] = i - 48
 
   // Append low case alphabets
-  for (let i = 97; i < 123; i++) keycodesMap[i - 32] = String.fromCharCode(i)
+  for (let i = 97; i < 123; i++) keyCodesMap[i - 32] = String.fromCharCode(i)
 
   // Append function keys
-  for (let i = 1; i < 13; i++) keycodesMap[i + 111] = 'f' + i
+  for (let i = 1; i < 13; i++) keyCodesMap[i + 111] = 'f' + i
 
-  const swappedKeycodesMap = Object.keys(keycodesMap).reduce((obj, key) => {
-    obj[keycodesMap[key]] = key
+  const swappedKeyCodesMap = Object.keys(keyCodesMap).reduce((obj, key) => {
+    obj[keyCodesMap[key]] = key
     return obj
   }, {})
 
-  return (arg) => typeof arg === 'number' ? keycodesMap[arg] : swappedKeycodesMap[arg]
+  return (arg) => typeof arg === 'number' ? keyCodesMap[arg] : swappedKeyCodesMap[arg]
 })()
 
 /* == Roguelike == */
@@ -73,11 +98,16 @@ const roguelike = {}
 const actionCreators = {}
 
 actionCreators.startGame = () => {
-  return {
-    type: 'StartGame'
-  }
+  return { type: 'StartGame' }
 }
 
+actionCreators.pauseGame = () => {
+  return { type: 'PauseGame' }
+}
+
+actionCreators.stopGame = () => {
+  return { type: 'StopGame' }
+}
 
 /* ==== Reducers ==== */
 const reducers = {}
@@ -93,6 +123,10 @@ reducers.status = (state, action) => {
     default:
       return state
   }
+}
+
+reducers.ui = (state, action) => {
+
 }
 
 /* ==== Middlewares ==== */
@@ -123,7 +157,11 @@ class Store {
   static getInitialState () {
     return {
       page: 'game', // @MAYBE: About
-      status: 'stopped'
+      status: 'stopped',
+      ui: {
+        hasPanel: false,
+        onSelectAction: null
+      },
     }
   }
 
@@ -184,53 +222,339 @@ class Store {
 /* ==== Library & Engine ==== */
 
 /**
- * Base View Class
+ * Keyboard Listener
+ */
+
+class KeyboardListener {
+
+  constructor (options) {
+    this._options = Object.assign({}, this._getDefaultOptions(), options)
+    this._pressedKeys = new Array(255) // ASCII table
+
+    // Attach event listeners
+    window.addEventListener('keydown', e => this._handleKeydown(e))
+    window.addEventListener('keyup', e => this._handleKeyup(e))
+  }
+
+  _getDefaultOptions () {
+    return {
+      isKeyRepeat: true,
+      handlePress: () => {},
+      handleRelease: () => {}
+    }
+  }
+
+  _handleKeydown (e) {
+    const { isKeyRepeat, handlePress } = this._options
+    const keyCode = e.keyCode
+
+    if (!isKeyRepeat && this.isPressed(keyCode)) return
+
+    this._pressedKeys[keyCode] = true
+
+    if (typeof handlePress === 'function') {
+      handlePress(e)
+    }
+  }
+
+  _handleKeyup (e) {
+    const { handleRelease } = this._options
+    const keyCode = e.keyCode
+
+    this._pressedKeys[keyCode] = false
+
+    if (typeof handleRelease === 'function') {
+      handleRelease(e)
+    }
+  }
+
+  isPressed (keyCode) {
+    return this._pressedKeys[keyCode]
+  }
+
+}
+
+/**
+ * Sound Manager
+ */
+
+class SoundManager {
+
+  constructor () {
+
+  }
+
+}
+
+/**
+ * Hero-Focused Viewport
+ */
+
+class HeroFocusedViewport {
+
+}
+
+/* ==== Mixin ==== */
+
+/**
+ * Mixin with Component
  *
- * @TODO: Think of a elegent way to combine tree-based structure and decoration
- * @TODO: Convert ES6 string template to virtual-node
- * @TODO: Beyond DOM-based view, make a magic to includes style, texture, sound and more info decorations
+ * @TODO: Separate some mixins into files when supporting ES6 Modules
  */
 
-class BaseView {
+const mixinWithComponent = (...mixins) => {
+  // MixedComponent Class
+  class MixedComponent {
 
+    constructor () {
+      MixedComponent.mixinConstructors.map(
+        f => f.call(this)
+      )
+    }
+
+  }
+
+  // Static props
+  MixedComponent.mixinConstructors = []
+
+  for(let mixin of mixins) {
+    // @TODO: Would need to handle mixin collisions...
+
+    // Collect constructor of mixin
+    if (typeof mixin._constructor === 'function') {
+      MixedComponent.mixinConstructors.push(
+        mixin._constructor
+      )
+      delete mixin._constructor
+    }
+
+    // Mount functions to MixedComponent.prototype
+    for(let name of Object.keys(mixin)) {
+      MixedComponent.prototype[name] = mixin[name]
+    }
+  }
+
+  return MixedComponent
 }
 
 /**
- * Style Decoration Class
+ * VNode Mixin
  */
 
-class StyleDecoration {
+const vnodeMixin = Object.assign({}, window.maquette, {
 
-}
+  _constructor: function () {
+    this._subViews = []
+    this.projector = this.createProjector({})
+    this.hc = this.hc.bind(this) // @FIXME
+  },
+
+  mount: function ($container, renderFunction = this.render.bind(this)) {
+    this.projector.append($container, renderFunction)
+  },
+
+  update: function (state) {
+    this.updateProps(state)
+    this.projector.scheduleRender()
+  },
+
+  hc: function (ComponentClass, props, children) {
+    if (typeof ComponentClass !== 'function') {
+      throw new Error('The first argument of `hc` should be a Component Class')
+    }
+
+    const component = new ComponentClass(props, children)
+
+    if (typeof component.render !== 'function') {
+      throw new Error(`No render function found in Component ${ComponentClass.name}`)
+    }
+
+    this._subViews.push(component)
+    return component.render()
+  }
+
+})
 
 /**
- * Sound Decoration Class
+ * Style Mixin
  */
 
-class SoundDecoration {
+const styleMixin = Object.assign({ csjs: window.csjs }, {
+  // @TODO: Define variables & utils
+
+  _constructor: function () {
+    if (!this.style) return
+
+    // Get classNames from styles
+    const styles = this.style()
+    const _s = {}
+    Object.keys(styles).map(styleName => _s[styleName] = styles[styleName].classNames)
+
+    // Mount the styles object & the util function
+    this.s = _s
+    this.sc = this.csjs.deps.classNames
+
+    // Inject Static CSS
+    const staticCss = this.csjs.getCss(styles)
+    this.csjs.deps.insertCss(staticCss)
+  }
+
+})
+
+/* ==== View ==== */
+
+/**
+ * Base View
+ *
+ * @TODO: Think of a elegent way to combine tree-based structure and decoration (mixin-based inheritance)
+ * @TODO: Beyond DOM-based view, make a magic to includes style, texture, sound, event and more info mixins
+ */
+
+class BaseView extends mixinWithComponent(
+  vnodeMixin,
+  styleMixin
+) {
+
+  static getDefaultProps () {
+    return {
+      canAutoRender: false
+    }
+  }
+
+  constructor (props, children = []) {
+    super()
+
+    this.props = Object.assign({}, BaseView.getDefaultProps(), props)
+    this.children = children
+
+    if (this.props.canAutoRender) this.render()
+  }
+
+  updateProps (props) {
+    this.props = props
+  }
+
+  render () {
+    const { h } = this
+
+    return h('div', 'Default render function, please override me', this.children)
+  }
 
 }
 
-/* ==== Views: Bottom ==== */
+/* ==== Bottom Views ==== */
 // @TODO: Add some common UI views
 
-/* ==== Views: Top ==== */
+/* ==== Top Views ==== */
 
-class HUDView {
+/**
+ * HUD View
+ */
 
-  constructor (props) {
+class HUDView extends BaseView {
+
+  render () {
+    return this.renderMiniMap()
+  }
+
+  renderMiniMap () {
+    const { h } = this
+
+    return h('div', 'Mini Map')
+  }
+
+}
+
+/**
+ * Panel View
+ */
+class PanelView extends BaseView {
+
+  style () {
+    return this.csjs`
+      .panelWrap {
+        border: 1px solid black;
+      }
+    `
+  }
+
+  render () {
+    const { status } = this.props
+
+    switch (status) {
+      case 'stopped':
+        return this.renderStartPanel()
+      case 'paused':
+        return this.renderPausedPanel()
+      default:
+       return null
+    }
+  }
+
+  renderStartPanel () {
+    const { h, s, sc } = this
+
+    // @TODO: Handle click
+    return h('div', { class: sc(s.panelWrap) }, [
+      h('div', 'Peaceful Roguelike Wonderland')
+    ])
+  }
+
+  renderPausedPanel () {
+    const { h } = this
+
+    return h('div', 'pause')
+  }
+
+  handlePanelButtonClick () {
 
   }
 
 }
 
-class PanelView {
+/**
+ * Scene View
+ */
+class SceneView extends BaseView {
 
-  constructor (props) {
+  render () {
+    const { h } = this
 
+    return h('div', 'Game Scene', this.children)
   }
 
 }
+
+/**
+ * Game View
+ */
+class GameView extends BaseView {
+
+  render () {
+    const { h, hc } = this
+    const { status } = this.props
+
+    return h('div.game', [
+      hc(PanelView, { status }),
+      this.renderScene()
+    ])
+  }
+
+  renderScene () {
+    const { hc } = this
+    const { status } = this.props
+
+    if (status !== 'started') {
+      return null
+    }
+
+    return hc(SceneView, {}, [
+      hc(HUDView)
+    ])
+  }
+
+}
+
 
 /* ==== Game Main ==== */
 
@@ -239,15 +563,17 @@ const store = new Store(
   middlewares.logger
 )
 
+// @TODO: MainLoop && Animation
 class Game {
   static getDefaultProps () {
     return {
       renderMode: 'dom', // 'dom' | 'canvas'
       keyboardShortcuts: {
         // HUD
-        togglePanel: 'escape|p',
+        togglePause: 'escape|p',
+        select: 'enter',
 
-        // Move
+        // Direction
         moveLeft: 'leftArrow|a',
         moveRight: 'rightArrow|d',
         moveTop: 'upArrow|w',
@@ -262,21 +588,21 @@ class Game {
 
   constructor (props) {
     // Data
-    this.props = Object.assign({}, Game.getDefaultProps(), props) // Immutable
+    this.props = Object.assign({}, Game.getDefaultProps(), props) // Immutable = state
     this.state = store.getState() // Update by dispatching action
     // DOMs
     this.$container = document.querySelector('.gameContainer')
     this.$body      = document.querySelector('body')
-    // Views
-    this.views = {}
     // Mount
     this._eventListeners()
-    this.start()
+    this._render(this.state)
   }
 
   _eventListeners () {
     // Player inputs
-    this.$body.addEventListener('keydown', e => this._handlePlayerKeydown(e))
+    this.keyboardListener = new KeyboardListener({
+      handlePress: this._handlePlayerKeydown.bind(this)
+    })
 
     // Store subscribe
     store.subscribe(this._update.bind(this))
@@ -286,21 +612,35 @@ class Game {
   }
 
   _handlePlayerKeydown (e) {
-    const { keyboardShortcuts } = this.props
-    const inputKeyName = utils.keymap(e.keyCode)
+    const { status } = this.state
 
-    if (inputKeyName === undefined) return
+    const inputKeyName = utils.keymap(e.keyCode)
+    const HUDKeys = ['escape', 'enter', 'p']
+
+    const disableConditions = [
+      () => inputKeyName === undefined,
+      () => status === 'paused' && HUDKeys.indexOf(inputKeyName) === -1
+    ]
+
+    if (disableConditions.some(c => c())) return
+
+    this._runActionByMatchKey(inputKeyName)
+  }
+
+  _runActionByMatchKey (key) {
+    const { keyboardShortcuts } = this.props
 
     for (let action in keyboardShortcuts) {
       const pattern = keyboardShortcuts[action]
-      const isMatched = new RegExp(`^(${pattern})$`, 'ig').test(inputKeyName)
-      if (isMatched) return console.log(action) // @TODO: Dispatch Action
+      const isMatched = new RegExp(`^(${pattern})$`, 'ig').test(key)
+      // @TODO: Move event handlers into each view components, especially for UI
+      if (isMatched) this[`handle${utils.capitalize(action)}`]()
     }
   }
 
   _update () {
     this.state = store.getState()
-    this._render(this.state)
+    this.renderer.update(this.state)
   }
 
   _render (state) {
@@ -317,7 +657,14 @@ class Game {
   }
 
   _renderInDOM (state)  {
-    this.$container.innerHTML = 'Hello World!'
+    const { keyboardShortcuts } = this.props
+
+    this.renderer = new GameView(
+      Object.assign({}, state, {
+        keyboardShortcuts: keyboardShortcuts
+      })
+    )
+    this.renderer.mount(this.$container)
   }
 
   _renderInCanvas (state) {
@@ -330,11 +677,53 @@ class Game {
   }
 
   pause () {
-    // @TODO
+    store.dispatch(actionCreators.pauseGame())
   }
 
   resume () {
-    // @TODO
+    this.start()
+  }
+
+  stop () {
+    store.dispatch(actionCreators.stopGame())
+  }
+
+  handleTogglePause () {
+    const { status } = this.state
+
+    if (status === 'paused') {
+      this.resume()
+    } else if (status === 'started') {
+      this.pause()
+    }
+  }
+
+  handleSelect () {
+
+  }
+
+  handleMoveLeft () {
+
+  }
+
+  handleMoveRight () {
+
+  }
+
+  handleMoveTop () {
+
+  }
+
+  handleMoveBottom () {
+
+  }
+
+  handleJump () {
+
+  }
+
+  handleAttack () {
+
   }
 
 }
