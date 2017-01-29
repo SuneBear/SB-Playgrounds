@@ -1,0 +1,37 @@
+@import url('../../styles/bases.css');
+
+/* == Font Face == */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), local('Lora-Regular'), url(./assets/fonts/Lora-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Lora'), local('Lora-Bold'), url(./assets/fonts/Lora-Bold.woff) format('woff');
+}
+
+/* == Container == */
+
+/* @TODO: Mobile-Friendly Responsive Design */
+html,
+body,
+.gameContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.gameContainer {
+  position: relative;
+  line-height: 1.4;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #383838;
+  overflow: hidden;
+}
+
+/* == Game == */
