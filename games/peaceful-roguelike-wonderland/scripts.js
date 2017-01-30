@@ -10,8 +10,8 @@ var _templateObject = _taggedTemplateLiteral(['\n\n      .modalView {\n        p
     _templateObject2 = _taggedTemplateLiteral(['\n\n      .kbcView {\n\n      }\n\n      .shortcutItem {\n        display: flex;\n        align-items: center;\n      }\n\n      .shortcutItem + .shortcutItem {\n        margin-top: 20px;\n      }\n\n      .shortcutKey {\n        min-width: 42px;\n        height: 42px;\n        padding: 0 10px;\n        margin: 0px 4px;\n        background: #fff;\n        border-radius: 4px;\n        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);\n        font: 18px/42px Helvetica, serif;\n        text-transform: capitalize;\n        text-align: center;\n        color: #666;\n      }\n\n      .shortcutAction {\n        margin-left: 20px;\n        font-size: 18px;\n        text-transform: capitalize;\n      }\n\n    '], ['\n\n      .kbcView {\n\n      }\n\n      .shortcutItem {\n        display: flex;\n        align-items: center;\n      }\n\n      .shortcutItem + .shortcutItem {\n        margin-top: 20px;\n      }\n\n      .shortcutKey {\n        min-width: 42px;\n        height: 42px;\n        padding: 0 10px;\n        margin: 0px 4px;\n        background: #fff;\n        border-radius: 4px;\n        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);\n        font: 18px/42px Helvetica, serif;\n        text-transform: capitalize;\n        text-align: center;\n        color: #666;\n      }\n\n      .shortcutAction {\n        margin-left: 20px;\n        font-size: 18px;\n        text-transform: capitalize;\n      }\n\n    ']),
     _templateObject3 = _taggedTemplateLiteral(['\n\n      .hudView {\n        position: absolute;\n        z-index: ', ';\n      }\n\n    '], ['\n\n      .hudView {\n        position: absolute;\n        z-index: ', ';\n      }\n\n    ']),
     _templateObject4 = _taggedTemplateLiteral(['\n\n      .panelWrap {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        justify-content: center;\n        z-index: 10010;\n        width: 100%;\n        height: 100vh;\n        padding-top: 20vh;\n        background: ', ';\n      }\n\n      .panelBody {\n        width: 80%;\n        max-width: 400px;\n        text-align: center;\n      }\n\n      .panelTitle {\n        font-size: 24px;\n        margin-bottom: 48px;\n      }\n\n      .panelList {\n        /* overflow-y: auto; */\n      }\n\n      .panelButton {\n        padding: 7px 16px;\n        border: 2px solid currentColor;\n        border-radius: 20px;\n        cursor: pointer;\n        transition: background 218ms;\n      }\n\n      .panelButton:hover,\n      .panelButton.isActive {\n        background: rgba(0, 0, 0, 0.1);\n      }\n\n      .panelButton + .panelButton {\n        margin-top: 24px;\n      }\n\n      .wonBlessings {\n        line-height: 1.6;\n        padding: 14px;\n        margin-top: -22px;\n        margin-bottom: 28px;\n        background: rgba(255, 255, 255, 0.65);\n        border-radius: 25px;\n      }\n\n      .wonBlessings em {\n        margin-right: 2px;\n        color: ', '\n      }\n    '], ['\n\n      .panelWrap {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        justify-content: center;\n        z-index: 10010;\n        width: 100%;\n        height: 100vh;\n        padding-top: 20vh;\n        background: ', ';\n      }\n\n      .panelBody {\n        width: 80%;\n        max-width: 400px;\n        text-align: center;\n      }\n\n      .panelTitle {\n        font-size: 24px;\n        margin-bottom: 48px;\n      }\n\n      .panelList {\n        /* overflow-y: auto; */\n      }\n\n      .panelButton {\n        padding: 7px 16px;\n        border: 2px solid currentColor;\n        border-radius: 20px;\n        cursor: pointer;\n        transition: background 218ms;\n      }\n\n      .panelButton:hover,\n      .panelButton.isActive {\n        background: rgba(0, 0, 0, 0.1);\n      }\n\n      .panelButton + .panelButton {\n        margin-top: 24px;\n      }\n\n      .wonBlessings {\n        line-height: 1.6;\n        padding: 14px;\n        margin-top: -22px;\n        margin-bottom: 28px;\n        background: rgba(255, 255, 255, 0.65);\n        border-radius: 25px;\n      }\n\n      .wonBlessings em {\n        margin-right: 2px;\n        color: ', '\n      }\n    ']),
-    _templateObject5 = _taggedTemplateLiteral(['\n\n      /* Common */\n      .sceneWrap {\n        position: absolute;\n        z-index: ', ';\n        width: 100%;\n      }\n\n      .scene {\n        position: absolute;\n        width: 100%;\n        height: 100vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        transition: all 618ms;\n      }\n\n      .sceneLayer {\n        max-width: 100%;\n        max-height: 100vh;\n      }\n\n      .sceneLayer.sceneEntities {\n        position: absolute;\n        z-index: 2;\n      }\n\n      .sceneLayer.sceneMap {\n        position: absolute;\n        z-index: 1;\n        display: flex;\n        flex-direction: row;\n      }\n\n      .commonCol {\n        width: ', '', ';\n      }\n\n      .commonCell {\n        flex: 1 0 auto;\n      }\n\n      .commonEntity {\n        position: absolute;\n      }\n\n\n      /* Text */\n      .textScene {\n\n      }\n\n      .textCell {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: ', '', ';\n        height: ', '', ';\n      }\n\n      .textCell.typeRoad {\n        color: #cccccc;\n        transition: all 418ms 218ms;\n      }\n\n      .textCell.typeWall {\n        color: #808080; /* #a6a6a6 */\n      }\n\n      .textCell.typeStart {\n        color: currentColor !important;\n        background: #f3e2e9 !important;\n      }\n\n      .textCell.typeEnd {\n        color: currentColor !important;\n        background: #e2e9f3 !important;\n      }\n\n      .textCell.isSolution {\n        background: #e9f3e2;\n      }\n\n      .textCell.isWalked {\n        color: ', ';\n      }\n\n      .textEntity.typePlayer {\n        background: rgba(255, 255, 255, .7);\n        transition: all 318ms;\n      }\n\n      /* Graphic */\n      .graphicScene {\n\n      }\n\n    '], ['\n\n      /* Common */\n      .sceneWrap {\n        position: absolute;\n        z-index: ', ';\n        width: 100%;\n      }\n\n      .scene {\n        position: absolute;\n        width: 100%;\n        height: 100vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        transition: all 618ms;\n      }\n\n      .sceneLayer {\n        max-width: 100%;\n        max-height: 100vh;\n      }\n\n      .sceneLayer.sceneEntities {\n        position: absolute;\n        z-index: 2;\n      }\n\n      .sceneLayer.sceneMap {\n        position: absolute;\n        z-index: 1;\n        display: flex;\n        flex-direction: row;\n      }\n\n      .commonCol {\n        width: ', '', ';\n      }\n\n      .commonCell {\n        flex: 1 0 auto;\n      }\n\n      .commonEntity {\n        position: absolute;\n      }\n\n\n      /* Text */\n      .textScene {\n\n      }\n\n      .textCell {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: ', '', ';\n        height: ', '', ';\n      }\n\n      .textCell.typeRoad {\n        color: #cccccc;\n        transition: all 418ms 218ms;\n      }\n\n      .textCell.typeWall {\n        color: #808080; /* #a6a6a6 */\n      }\n\n      .textCell.typeStart {\n        color: currentColor !important;\n        background: #f3e2e9 !important;\n      }\n\n      .textCell.typeEnd {\n        color: currentColor !important;\n        background: #e2e9f3 !important;\n      }\n\n      .textCell.isSolution {\n        background: #e9f3e2;\n      }\n\n      .textCell.isWalked {\n        color: ', ';\n      }\n\n      .textEntity.typePlayer {\n        background: rgba(255, 255, 255, .7);\n        transition: all 318ms;\n      }\n\n      /* Graphic */\n      .graphicScene {\n\n      }\n\n    ']),
-    _templateObject6 = _taggedTemplateLiteral(['\n\n      .game {\n        position: relative;\n      }\n\n    '], ['\n\n      .game {\n        position: relative;\n      }\n\n    ']);
+    _templateObject5 = _taggedTemplateLiteral(['\n\n      /* Common */\n      .sceneWrap {\n        position: absolute;\n        z-index: ', ';\n        width: 100%;\n      }\n\n      .scene {\n        position: absolute;\n        width: 100%;\n        height: 100vh;\n        display: flex;\n        will-change: transform;\n        transition: all 618ms;\n      }\n\n      .sceneLayer {\n        position: absolute;\n        display: flex;\n        max-width: 100%;\n        max-height: 100vh;\n        margin: auto;\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        right: 0;\n      }\n\n      .sceneLayer.sceneEntities {\n        z-index: 2;\n      }\n\n      .sceneLayer.sceneMap {\n        z-index: 1;\n        flex-direction: row;\n      }\n\n      .commonCol {\n        flex: 0 0 auto;\n        width: ', '', ';\n      }\n\n      .commonCell {\n        flex: 1 0 auto;\n      }\n\n      .commonEntity {\n        position: absolute;\n      }\n\n      /* Text */\n      .textScene {\n\n      }\n\n      .textCell {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: ', '', ';\n        height: ', '', ';\n      }\n\n      .textCell.typeRoad {\n        color: #cccccc;\n        transition: all 418ms 218ms;\n      }\n\n      .textCell.typeWall {\n        color: #666666; /* #a6a6a6 */\n      }\n\n      .textCell.typeStart {\n        color: currentColor !important;\n        background: #f3ece2 !important;\n      }\n\n      .textCell.typeEnd {\n        color: currentColor !important;\n        background: #e2e9f3 !important;\n      }\n\n      .textCell.isWalked {\n        color: ', ';\n      }\n\n      .textCell.isSolution {\n        background: #e9f3e2;\n      }\n\n      .textEntity.typePlayer {\n        align-items: flex-end;\n        padding: 10px;\n        background: ', ';\n        background-clip: content-box;\n        border-radius: 50%;\n        color: #ffffff;\n        opacity: 0.9;\n        will-change: transform;\n        transition: all 318ms;\n      }\n\n      /* Graphic */\n      .graphicScene {\n        align-items: center;\n        justify-content: center;\n      }\n\n    '], ['\n\n      /* Common */\n      .sceneWrap {\n        position: absolute;\n        z-index: ', ';\n        width: 100%;\n      }\n\n      .scene {\n        position: absolute;\n        width: 100%;\n        height: 100vh;\n        display: flex;\n        will-change: transform;\n        transition: all 618ms;\n      }\n\n      .sceneLayer {\n        position: absolute;\n        display: flex;\n        max-width: 100%;\n        max-height: 100vh;\n        margin: auto;\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        right: 0;\n      }\n\n      .sceneLayer.sceneEntities {\n        z-index: 2;\n      }\n\n      .sceneLayer.sceneMap {\n        z-index: 1;\n        flex-direction: row;\n      }\n\n      .commonCol {\n        flex: 0 0 auto;\n        width: ', '', ';\n      }\n\n      .commonCell {\n        flex: 1 0 auto;\n      }\n\n      .commonEntity {\n        position: absolute;\n      }\n\n      /* Text */\n      .textScene {\n\n      }\n\n      .textCell {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: ', '', ';\n        height: ', '', ';\n      }\n\n      .textCell.typeRoad {\n        color: #cccccc;\n        transition: all 418ms 218ms;\n      }\n\n      .textCell.typeWall {\n        color: #666666; /* #a6a6a6 */\n      }\n\n      .textCell.typeStart {\n        color: currentColor !important;\n        background: #f3ece2 !important;\n      }\n\n      .textCell.typeEnd {\n        color: currentColor !important;\n        background: #e2e9f3 !important;\n      }\n\n      .textCell.isWalked {\n        color: ', ';\n      }\n\n      .textCell.isSolution {\n        background: #e9f3e2;\n      }\n\n      .textEntity.typePlayer {\n        align-items: flex-end;\n        padding: 10px;\n        background: ', ';\n        background-clip: content-box;\n        border-radius: 50%;\n        color: #ffffff;\n        opacity: 0.9;\n        will-change: transform;\n        transition: all 318ms;\n      }\n\n      /* Graphic */\n      .graphicScene {\n        align-items: center;\n        justify-content: center;\n      }\n\n    ']),
+    _templateObject6 = _taggedTemplateLiteral(['\n\n      .game {\n        position: relative;\n        background: #ffffff;\n        height: 100vh;\n        transition: all 518ms;\n      }\n\n      .game.isInvertColors {\n        -webkit-filter: invert(100%);\n      }\n\n    '], ['\n\n      .game {\n        position: relative;\n        background: #ffffff;\n        height: 100vh;\n        transition: all 518ms;\n      }\n\n      .game.isInvertColors {\n        -webkit-filter: invert(100%);\n      }\n\n    ']);
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -1149,6 +1149,10 @@ void function () {
     return { type: 'Display/ToggleMap' };
   };
 
+  actionCreators.invertPageColors = function () {
+    return { type: 'Display/InvertPageColors' };
+  };
+
   actionCreators.toggleSolution = function () {
     return { type: 'Display/ToggleSolution' };
   };
@@ -1268,6 +1272,9 @@ void function () {
       case 'Display/ToggleMap':
         var map = !state.map;
         return Object.assign({}, state, { map: map });
+      case 'Display/InvertPageColors':
+        var invert = !state.invert;
+        return Object.assign({}, state, { invert: invert });
       case 'Display/ToggleSolution':
         var solution = !state.solution;
         return Object.assign({}, state, { solution: solution });
@@ -1480,6 +1487,7 @@ void function () {
           display: {
             sceneType: 'text',
             cameraTraceTarget: 'player',
+            invert: false,
             map: false,
             solution: false,
             // Stats
@@ -1549,9 +1557,9 @@ void function () {
         var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : Store.getInitialState();
         var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-        // @Hack: Reset state
+        // @Hack: Reset state when stop to the game
         if (action.type === 'Status/StopGame') {
-          return Store.getInitialState();
+          return this._resetState();
         }
 
         // Normal reducers
@@ -1564,11 +1572,27 @@ void function () {
         };
       }
     }, {
+      key: '_resetState',
+      value: function _resetState() {
+        // Create persistent settings
+        var _state$display = this.state.display,
+            sceneType = _state$display.sceneType,
+            invert = _state$display.invert;
+
+        var persistentDisplay = {
+          sceneType: sceneType,
+          invert: invert
+        };
+        var display = Object.assign(Store.getInitialState().display, persistentDisplay);
+
+        return Object.assign(Store.getInitialState(), { display: display });
+      }
+    }, {
       key: '_enableReduxDevtools',
       value: function _enableReduxDevtools() {
         var _this6 = this;
 
-        this._devStore = window.devToolsExtension && window.devToolsExtension(this._reduce);
+        this._devStore = window.devToolsExtension && window.devToolsExtension(this._reduce.bind(this));
         if (this._devStore) {
           this._devStore.subscribe(function () {
             _this6.setState(_this6._devStore.getState());
@@ -1581,7 +1605,8 @@ void function () {
       value: function dispatch() {
         var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-        this.setState(this._reduce(this.state, action));
+        var reducer = this._reduce.bind(this);
+        this.setState(reducer(this.state, action));
         this._notifySubscribers();
         if (this._devStore) this._devStore.dispatch(action);
         return action;
@@ -2661,7 +2686,7 @@ void function () {
           svTextCellUnit: svTextCellUnit
         };
 
-        return this.csjs(_templateObject5, svZIndexScene, svTextCellSize, svTextCellUnit, svTextCellSize, svTextCellUnit, svTextCellSize, svTextCellUnit, svPrimary);
+        return this.csjs(_templateObject5, svZIndexScene, svTextCellSize, svTextCellUnit, svTextCellSize, svTextCellUnit, svTextCellSize, svTextCellUnit, svPrimary, svPrimary);
       }
     }, {
       key: 'render',
@@ -2852,13 +2877,15 @@ void function () {
     }, {
       key: 'render',
       value: function render() {
+        var _classes2;
+
         var h = this.h,
             hc = this.hc,
-            s = this.s,
-            sc = this.sc;
+            s = this.s;
+        var invert = this.props.display.invert;
 
 
-        return h('div', { classes: sc(s.game) }, [this.renderModal(), this.renderPanel(), this.renderHUD(), this.renderScene()]);
+        return h('div', { classes: (_classes2 = {}, _defineProperty(_classes2, s.game, true), _defineProperty(_classes2, s.isInvertColors, invert), _classes2) }, [this.renderModal(), this.renderPanel(), this.renderHUD(), this.renderScene()]);
       }
     }, {
       key: 'renderModal',
@@ -2960,6 +2987,7 @@ void function () {
             select: 'enter',
             togglePopup: 'escape|p',
             // openMap: 'm',
+            invertPageColors: 'i',
             getSolution: 'h',
 
             // Sence Type
@@ -3028,7 +3056,7 @@ void function () {
 
 
         var inputKeyName = keymap(keyCode);
-        var persistingControls = ['togglePopup', 'select', 'moveUp', 'moveDown'];
+        var persistingControls = ['togglePopup', 'select', 'invertPageColors', 'moveUp', 'moveDown'];
         var persistingKeys = persistingControls.map(function (control) {
           return keyboardShortcuts[control];
         }).join('|').split('|');
@@ -3352,6 +3380,11 @@ void function () {
       key: 'handleOpenMap',
       value: function handleOpenMap() {
         store.dispatch(actionCreators.toggleMap());
+      }
+    }, {
+      key: 'handleInvertPageColors',
+      value: function handleInvertPageColors() {
+        store.dispatch(actionCreators.invertPageColors());
       }
     }, {
       key: 'handleGetSolution',
