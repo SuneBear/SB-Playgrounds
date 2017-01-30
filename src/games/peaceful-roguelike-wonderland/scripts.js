@@ -72,7 +72,7 @@ void function () {
 
 /* == Constants == */
 const GAME_NAME = 'Peaceful Roguelike Wonderland'
-const FEEDBACK_URL = 'https://github.com/SuneBear/SB-Playgrounds/issues/new'
+const PRESENTATION_URL = 'https://github.com/SuneBear/SB-Sessions/tree/master/2017-02-08-peaceful-roguelike-wonderland-behind-the-scenes'
 const NOOP = () => {}
 
 /* == Utils == */
@@ -156,7 +156,7 @@ utils.shuffle = array => {
 
 // Simulate Keypress
 utils.simulateKeypress = keyName => {
-  const { keymap } = utils
+  const { keymap, simulateKeyup } = utils
 
   // Keydown
   const eventKeydown = new Event('keydown')
@@ -166,11 +166,17 @@ utils.simulateKeypress = keyName => {
   window.dispatchEvent(eventKeydown)
 
   // Keyup
+  setTimeout(() => simulateKeyup(keyName), 0)
+}
+
+utils.simulateKeyup = keyName => {
+  const { keymap } = utils
+
   const eventKeyup = new Event('keyup')
   eventKeyup.key = keyName
   eventKeyup.keyCode = keymap(keyName)
   eventKeyup.which = eventKeyup.keyCode
-  setTimeout(() => window.dispatchEvent(eventKeyup), 0)
+  window.dispatchEvent(eventKeyup)
 }
 
 // Throttle
@@ -302,7 +308,6 @@ class Point {
   }
 
 }
-
 
 /* ==== Grid Generators ==== */
 
@@ -612,7 +617,6 @@ class MazeGrid extends BaseGrid {
       currentCell = activeCellList[index]
 
       const neighbors = this.getNeighbors(currentCell, DiagonalMovement.Never, this._isUnvisitedAt.bind(this))
-
 
       if (neighbors.length) {
         this._breakDefaultCellAndCraveRoad(currentCell)
@@ -929,6 +933,10 @@ actionCreators.toggleMap = () => {
   return { type: 'Display/ToggleMap' }
 }
 
+actionCreators.invertPageColors = () => {
+  return { type: 'Display/InvertPageColors' }
+}
+
 actionCreators.toggleSolution = () => {
   return { type: 'Display/ToggleSolution' }
 }
@@ -1045,6 +1053,9 @@ reducers.display = (state, action) => {
     case 'Display/ToggleMap':
       const map = !state.map
       return Object.assign({}, state, { map })
+    case 'Display/InvertPageColors':
+      const invert = !state.invert
+      return Object.assign({}, state, { invert })
     case 'Display/ToggleSolution':
       const solution = !state.solution
       return Object.assign({}, state, { solution })
@@ -1118,7 +1129,7 @@ reducers.ui = (state, action) => {
     case 'UI/OpenStartPanel':
       return Object.assign({}, state, {
         panel: 'start',
-        panelActions: ['startGame', 'openKeyboardControlsModal', 'giveFeedback'],
+        panelActions: ['startGame', 'openKeyboardControlsModal', 'behindTheScenes'],
         onSelectAction: 'startGame'
       })
     case 'UI/OpenPausePanel':
@@ -1214,6 +1225,7 @@ class Store {
       display: {
         sceneType: 'text',
         cameraTraceTarget: 'player',
+        invert: false,
         map: false,
         solution: false,
         // Stats
@@ -1235,7 +1247,7 @@ class Store {
       ui: {
         panel: 'start',
         onSelectAction: 'startGame',
-        panelActions: ['startGame', 'openKeyboardControlsModal', 'giveFeedback'],
+        panelActions: ['startGame', 'openKeyboardControlsModal', 'behindTheScenes'],
         modal: null
       }
     }
@@ -1268,9 +1280,9 @@ class Store {
   }
 
   _reduce (state = Store.getInitialState(), action = {}) {
-    // @Hack: Reset state
+    // @Hack: Reset state when stop to the game
     if (action.type === 'Status/StopGame') {
-      return Store.getInitialState()
+      return this._resetState()
     }
 
     // Normal reducers
@@ -1283,8 +1295,23 @@ class Store {
     }
   }
 
+  _resetState () {
+    // Create persistent settings
+    const { sceneType, invert } = this.state.display
+    const persistentDisplay = {
+      sceneType,
+      invert
+    }
+    const display = Object.assign(
+      Store.getInitialState().display,
+      persistentDisplay
+    )
+
+    return Object.assign(Store.getInitialState(), { display })
+  }
+
   _enableReduxDevtools () {
-    this._devStore = window.devToolsExtension && window.devToolsExtension(this._reduce)
+    this._devStore = window.devToolsExtension && window.devToolsExtension(this._reduce.bind(this))
     if (this._devStore) {
       this._devStore.subscribe(() => {
         this.setState(this._devStore.getState())
@@ -1294,7 +1321,8 @@ class Store {
   }
 
   dispatch (action = {}) {
-    this.setState(this._reduce(this.state, action))
+    const reducer = this._reduce.bind(this)
+    this.setState(reducer(this.state, action))
     this._notifySubscribers()
     if (this._devStore) this._devStore.dispatch(action)
     return action
@@ -1474,7 +1502,10 @@ class SoundManager {
       this.onLoaded()
     }
 
-    if (sprite) options.sprite = sprite
+    if (sprite) {
+      options.sprite = sprite
+      options.volume = 0.7
+    }
 
     this[type] = new Howl(options)
   }
@@ -1831,7 +1862,6 @@ class ModalView extends BaseView {
         position: fixed;
         z-index: ${svZIndexModal};
         display: flex;
-        justify-content: center;
         width: 100%;
         height: 100vh;
       }
@@ -1847,13 +1877,15 @@ class ModalView extends BaseView {
 
       .modalDialog {
         position: absolute;
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         width: 65%;
         max-width: 700px;
         min-width: 300px;
         padding: 25px;
-        margin: 10vh 0;
+        margin: 10vh auto;
         max-height: 80vh;
         background: hsla(0, 0%, 100%, .36);
         border: 2px solid currentColor;
@@ -2216,7 +2248,7 @@ class PanelView extends BaseView {
     const actionTexts = [
       'Start Game',
       'Keyboard Controls',
-      'Give Feedback'
+      'Behind the Scenes'
     ]
 
     return this.renderPanelWrap(
@@ -2338,29 +2370,34 @@ class SceneView extends BaseView {
         width: 100%;
         height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        will-change: transform;
         transition: all 618ms;
       }
 
       .sceneLayer {
+        position: absolute;
+        display: flex;
         max-width: 100%;
         max-height: 100vh;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
       }
 
       .sceneLayer.sceneEntities {
-        position: absolute;
         z-index: 2;
       }
 
       .sceneLayer.sceneMap {
-        position: absolute;
         z-index: 1;
-        display: flex;
         flex-direction: row;
       }
 
       .commonCol {
+        flex: 0 0 auto;
         width: ${svTextCellSize}${svTextCellUnit};
       }
 
@@ -2371,7 +2408,6 @@ class SceneView extends BaseView {
       .commonEntity {
         position: absolute;
       }
-
 
       /* Text */
       .textScene {
@@ -2392,12 +2428,12 @@ class SceneView extends BaseView {
       }
 
       .textCell.typeWall {
-        color: #808080; /* #a6a6a6 */
+        color: #666666; /* #a6a6a6 */
       }
 
       .textCell.typeStart {
         color: currentColor !important;
-        background: #f3e2e9 !important;
+        background: #f3ece2 !important;
       }
 
       .textCell.typeEnd {
@@ -2405,22 +2441,30 @@ class SceneView extends BaseView {
         background: #e2e9f3 !important;
       }
 
-      .textCell.isSolution {
-        background: #e9f3e2;
-      }
-
       .textCell.isWalked {
         color: ${svPrimary};
       }
 
+      .textCell.isSolution {
+        background: #e9f3e2;
+      }
+
       .textEntity.typePlayer {
-        background: rgba(255, 255, 255, .7);
+        align-items: flex-end;
+        padding: 10px;
+        background: ${svPrimary};
+        background-clip: content-box;
+        border-radius: 50%;
+        color: #ffffff;
+        opacity: 0.9;
+        will-change: transform;
         transition: all 318ms;
       }
 
       /* Graphic */
       .graphicScene {
-
+        align-items: center;
+        justify-content: center;
       }
 
     `
@@ -2570,15 +2614,23 @@ class GameView extends BaseView {
 
       .game {
         position: relative;
+        background: #ffffff;
+        height: 100vh;
+        transition: all 518ms;
+      }
+
+      .game.isInvertColors {
+        -webkit-filter: invert(100%);
       }
 
     `
   }
 
   render () {
-    const { h, hc, s, sc } = this
+    const { h, hc, s } = this
+    const { invert } = this.props.display
 
-    return h('div', { classes: sc(s.game) }, [
+    return h('div', { classes: { [s.game]: true, [s.isInvertColors]: invert } }, [
       this.renderModal(),
       this.renderPanel(),
       this.renderHUD(),
@@ -2635,7 +2687,6 @@ class GameView extends BaseView {
 
 }
 
-
 /* ==== Game Main ==== */
 
 // Sound
@@ -2659,6 +2710,7 @@ class Game {
         select: 'enter',
         togglePopup: 'escape|p',
         // openMap: 'm',
+        invertPageColors: 'i',
         getSolution: 'h',
 
         // Sence Type
@@ -2719,9 +2771,8 @@ class Game {
     const { keyboardShortcuts } = this.props
     const { status } = this.state
 
-
     const inputKeyName = keymap(keyCode)
-    const persistingControls = ['togglePopup', 'select', 'moveUp', 'moveDown']
+    const persistingControls = ['togglePopup', 'select', 'invertPageColors', 'moveUp', 'moveDown']
     const persistingKeys = persistingControls
       .map(control => keyboardShortcuts[control])
       .join('|')
@@ -2888,6 +2939,8 @@ class Game {
   }
 
   handleSelect () {
+    const { simulateKeyup } = utils
+    const { keyboardShortcuts } = this.props
     const { status, ui } = this.state
 
     if (ui.modal) {
@@ -2899,8 +2952,10 @@ class Game {
     soundManager.play('effects', 'click')
 
     switch (ui.onSelectAction) {
-      case 'giveFeedback':
-        return window.open(FEEDBACK_URL)
+      case 'behindTheScenes':
+        window.open(PRESENTATION_URL)
+        // @Hack: Fouce excute simulateKeyup
+        return simulateKeyup(keyboardShortcuts.select)
       case 'startGame':
         return this.start()
       case 'stopGame':
@@ -2995,6 +3050,10 @@ class Game {
 
   handleOpenMap () {
     store.dispatch(actionCreators.toggleMap())
+  }
+
+  handleInvertPageColors () {
+    store.dispatch(actionCreators.invertPageColors())
   }
 
   handleGetSolution () {
