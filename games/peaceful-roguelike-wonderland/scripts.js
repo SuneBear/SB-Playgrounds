@@ -6,7 +6,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n\n      .modalView {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        justify-content: center;\n        width: 100%;\n        height: 100vh;\n      }\n\n      .modalMask {\n        position: absolute;\n        z-index: -1;\n        width: 100%;\n        height: 100vh;\n        background: rgba(245, 245, 245, 0.95);\n        cursor: pointer;\n      }\n\n      .modalDialog {\n        position: absolute;\n        display: flex;\n        flex-direction: column;\n        width: 65%;\n        max-width: 700px;\n        min-width: 300px;\n        padding: 25px;\n        margin: 10vh 0;\n        max-height: 80vh;\n        background: hsla(0, 0%, 100%, .36);\n        border: 2px solid currentColor;\n        border-radius: 4px;\n        box-shadow: 1px 2px 5px rgba(0, 0, 0, .15);\n        overflow-y: auto;\n      }\n\n      .modalHeader {\n        position: relative;\n        padding-bottom: 17px;\n        margin-top: 5px;\n        margin-bottom: 20px;\n        border-bottom: 2px solid currentColor;\n      }\n\n      .modalTitle {\n        font-size: 20px;\n      }\n\n      .modalClose {\n        position: absolute;\n        right: -2px;\n        top: 2px;\n        width: 24px;\n        height: 24px;\n        font-size: 20px;\n        cursor: pointer;\n      }\n\n      .modalClose:before, .modalClose:after {\n        content: \' \';\n        position: absolute;\n        left: 12px;\n        height: 24px;\n        width: 2px;\n        background-color: currentColor;\n        border-radius: 2px;\n      }\n\n      .modalClose:before {\n        transform: rotate(45deg);\n      }\n\n      .modalClose:after {\n        transform: rotate(-45deg);\n      }\n\n      .modalClose:hover {\n        color: ', ';\n      }\n\n      .modalBody {\n        display: flex;\n        width: 100%;\n        overflow: hidden;\n      }\n\n      .modalBody > * {\n        flex: 1;\n        overflow-y: auto;\n        padding-bottom: 5px;\n      }\n\n    '], ['\n\n      .modalView {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        justify-content: center;\n        width: 100%;\n        height: 100vh;\n      }\n\n      .modalMask {\n        position: absolute;\n        z-index: -1;\n        width: 100%;\n        height: 100vh;\n        background: rgba(245, 245, 245, 0.95);\n        cursor: pointer;\n      }\n\n      .modalDialog {\n        position: absolute;\n        display: flex;\n        flex-direction: column;\n        width: 65%;\n        max-width: 700px;\n        min-width: 300px;\n        padding: 25px;\n        margin: 10vh 0;\n        max-height: 80vh;\n        background: hsla(0, 0%, 100%, .36);\n        border: 2px solid currentColor;\n        border-radius: 4px;\n        box-shadow: 1px 2px 5px rgba(0, 0, 0, .15);\n        overflow-y: auto;\n      }\n\n      .modalHeader {\n        position: relative;\n        padding-bottom: 17px;\n        margin-top: 5px;\n        margin-bottom: 20px;\n        border-bottom: 2px solid currentColor;\n      }\n\n      .modalTitle {\n        font-size: 20px;\n      }\n\n      .modalClose {\n        position: absolute;\n        right: -2px;\n        top: 2px;\n        width: 24px;\n        height: 24px;\n        font-size: 20px;\n        cursor: pointer;\n      }\n\n      .modalClose:before, .modalClose:after {\n        content: \' \';\n        position: absolute;\n        left: 12px;\n        height: 24px;\n        width: 2px;\n        background-color: currentColor;\n        border-radius: 2px;\n      }\n\n      .modalClose:before {\n        transform: rotate(45deg);\n      }\n\n      .modalClose:after {\n        transform: rotate(-45deg);\n      }\n\n      .modalClose:hover {\n        color: ', ';\n      }\n\n      .modalBody {\n        display: flex;\n        width: 100%;\n        overflow: hidden;\n      }\n\n      .modalBody > * {\n        flex: 1;\n        overflow-y: auto;\n        padding-bottom: 5px;\n      }\n\n    ']),
+var _templateObject = _taggedTemplateLiteral(['\n\n      .modalView {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        width: 100%;\n        height: 100vh;\n      }\n\n      .modalMask {\n        position: absolute;\n        z-index: -1;\n        width: 100%;\n        height: 100vh;\n        background: rgba(245, 245, 245, 0.95);\n        cursor: pointer;\n      }\n\n      .modalDialog {\n        position: absolute;\n        left: 0;\n        right: 0;\n        display: flex;\n        flex-direction: column;\n        width: 65%;\n        max-width: 700px;\n        min-width: 300px;\n        padding: 25px;\n        margin: 10vh auto;\n        max-height: 80vh;\n        background: hsla(0, 0%, 100%, .36);\n        border: 2px solid currentColor;\n        border-radius: 4px;\n        box-shadow: 1px 2px 5px rgba(0, 0, 0, .15);\n        overflow-y: auto;\n      }\n\n      .modalHeader {\n        position: relative;\n        padding-bottom: 17px;\n        margin-top: 5px;\n        margin-bottom: 20px;\n        border-bottom: 2px solid currentColor;\n      }\n\n      .modalTitle {\n        font-size: 20px;\n      }\n\n      .modalClose {\n        position: absolute;\n        right: -2px;\n        top: 2px;\n        width: 24px;\n        height: 24px;\n        font-size: 20px;\n        cursor: pointer;\n      }\n\n      .modalClose:before, .modalClose:after {\n        content: \' \';\n        position: absolute;\n        left: 12px;\n        height: 24px;\n        width: 2px;\n        background-color: currentColor;\n        border-radius: 2px;\n      }\n\n      .modalClose:before {\n        transform: rotate(45deg);\n      }\n\n      .modalClose:after {\n        transform: rotate(-45deg);\n      }\n\n      .modalClose:hover {\n        color: ', ';\n      }\n\n      .modalBody {\n        display: flex;\n        width: 100%;\n        overflow: hidden;\n      }\n\n      .modalBody > * {\n        flex: 1;\n        overflow-y: auto;\n        padding-bottom: 5px;\n      }\n\n    '], ['\n\n      .modalView {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        width: 100%;\n        height: 100vh;\n      }\n\n      .modalMask {\n        position: absolute;\n        z-index: -1;\n        width: 100%;\n        height: 100vh;\n        background: rgba(245, 245, 245, 0.95);\n        cursor: pointer;\n      }\n\n      .modalDialog {\n        position: absolute;\n        left: 0;\n        right: 0;\n        display: flex;\n        flex-direction: column;\n        width: 65%;\n        max-width: 700px;\n        min-width: 300px;\n        padding: 25px;\n        margin: 10vh auto;\n        max-height: 80vh;\n        background: hsla(0, 0%, 100%, .36);\n        border: 2px solid currentColor;\n        border-radius: 4px;\n        box-shadow: 1px 2px 5px rgba(0, 0, 0, .15);\n        overflow-y: auto;\n      }\n\n      .modalHeader {\n        position: relative;\n        padding-bottom: 17px;\n        margin-top: 5px;\n        margin-bottom: 20px;\n        border-bottom: 2px solid currentColor;\n      }\n\n      .modalTitle {\n        font-size: 20px;\n      }\n\n      .modalClose {\n        position: absolute;\n        right: -2px;\n        top: 2px;\n        width: 24px;\n        height: 24px;\n        font-size: 20px;\n        cursor: pointer;\n      }\n\n      .modalClose:before, .modalClose:after {\n        content: \' \';\n        position: absolute;\n        left: 12px;\n        height: 24px;\n        width: 2px;\n        background-color: currentColor;\n        border-radius: 2px;\n      }\n\n      .modalClose:before {\n        transform: rotate(45deg);\n      }\n\n      .modalClose:after {\n        transform: rotate(-45deg);\n      }\n\n      .modalClose:hover {\n        color: ', ';\n      }\n\n      .modalBody {\n        display: flex;\n        width: 100%;\n        overflow: hidden;\n      }\n\n      .modalBody > * {\n        flex: 1;\n        overflow-y: auto;\n        padding-bottom: 5px;\n      }\n\n    ']),
     _templateObject2 = _taggedTemplateLiteral(['\n\n      .kbcView {\n\n      }\n\n      .shortcutItem {\n        display: flex;\n        align-items: center;\n      }\n\n      .shortcutItem + .shortcutItem {\n        margin-top: 20px;\n      }\n\n      .shortcutKey {\n        min-width: 42px;\n        height: 42px;\n        padding: 0 10px;\n        margin: 0px 4px;\n        background: #fff;\n        border-radius: 4px;\n        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);\n        font: 18px/42px Helvetica, serif;\n        text-transform: capitalize;\n        text-align: center;\n        color: #666;\n      }\n\n      .shortcutAction {\n        margin-left: 20px;\n        font-size: 18px;\n        text-transform: capitalize;\n      }\n\n    '], ['\n\n      .kbcView {\n\n      }\n\n      .shortcutItem {\n        display: flex;\n        align-items: center;\n      }\n\n      .shortcutItem + .shortcutItem {\n        margin-top: 20px;\n      }\n\n      .shortcutKey {\n        min-width: 42px;\n        height: 42px;\n        padding: 0 10px;\n        margin: 0px 4px;\n        background: #fff;\n        border-radius: 4px;\n        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);\n        font: 18px/42px Helvetica, serif;\n        text-transform: capitalize;\n        text-align: center;\n        color: #666;\n      }\n\n      .shortcutAction {\n        margin-left: 20px;\n        font-size: 18px;\n        text-transform: capitalize;\n      }\n\n    ']),
     _templateObject3 = _taggedTemplateLiteral(['\n\n      .hudView {\n        position: absolute;\n        z-index: ', ';\n      }\n\n    '], ['\n\n      .hudView {\n        position: absolute;\n        z-index: ', ';\n      }\n\n    ']),
     _templateObject4 = _taggedTemplateLiteral(['\n\n      .panelWrap {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        justify-content: center;\n        z-index: 10010;\n        width: 100%;\n        height: 100vh;\n        padding-top: 20vh;\n        background: ', ';\n      }\n\n      .panelBody {\n        width: 80%;\n        max-width: 400px;\n        text-align: center;\n      }\n\n      .panelTitle {\n        font-size: 24px;\n        margin-bottom: 48px;\n      }\n\n      .panelList {\n        /* overflow-y: auto; */\n      }\n\n      .panelButton {\n        padding: 7px 16px;\n        border: 2px solid currentColor;\n        border-radius: 20px;\n        cursor: pointer;\n        transition: background 218ms;\n      }\n\n      .panelButton:hover,\n      .panelButton.isActive {\n        background: rgba(0, 0, 0, 0.1);\n      }\n\n      .panelButton + .panelButton {\n        margin-top: 24px;\n      }\n\n      .wonBlessings {\n        line-height: 1.6;\n        padding: 14px;\n        margin-top: -22px;\n        margin-bottom: 28px;\n        background: rgba(255, 255, 255, 0.65);\n        border-radius: 25px;\n      }\n\n      .wonBlessings em {\n        margin-right: 2px;\n        color: ', '\n      }\n    '], ['\n\n      .panelWrap {\n        position: fixed;\n        z-index: ', ';\n        display: flex;\n        justify-content: center;\n        z-index: 10010;\n        width: 100%;\n        height: 100vh;\n        padding-top: 20vh;\n        background: ', ';\n      }\n\n      .panelBody {\n        width: 80%;\n        max-width: 400px;\n        text-align: center;\n      }\n\n      .panelTitle {\n        font-size: 24px;\n        margin-bottom: 48px;\n      }\n\n      .panelList {\n        /* overflow-y: auto; */\n      }\n\n      .panelButton {\n        padding: 7px 16px;\n        border: 2px solid currentColor;\n        border-radius: 20px;\n        cursor: pointer;\n        transition: background 218ms;\n      }\n\n      .panelButton:hover,\n      .panelButton.isActive {\n        background: rgba(0, 0, 0, 0.1);\n      }\n\n      .panelButton + .panelButton {\n        margin-top: 24px;\n      }\n\n      .wonBlessings {\n        line-height: 1.6;\n        padding: 14px;\n        margin-top: -22px;\n        margin-bottom: 28px;\n        background: rgba(255, 255, 255, 0.65);\n        border-radius: 25px;\n      }\n\n      .wonBlessings em {\n        margin-right: 2px;\n        color: ', '\n      }\n    ']),
@@ -101,7 +101,7 @@ void function () {
 
   /* == Constants == */
   var GAME_NAME = 'Peaceful Roguelike Wonderland';
-  var FEEDBACK_URL = 'https://github.com/SuneBear/SB-Playgrounds/issues/new';
+  var PRESENTATION_URL = 'https://github.com/SuneBear/SB-Sessions/tree/master/2017-02-08-peaceful-roguelike-wonderland-behind-the-scenes';
   var NOOP = function NOOP() {};
 
   /* == Utils == */
@@ -200,7 +200,8 @@ void function () {
 
   // Simulate Keypress
   utils.simulateKeypress = function (keyName) {
-    var keymap = utils.keymap;
+    var keymap = utils.keymap,
+        simulateKeyup = utils.simulateKeyup;
 
     // Keydown
 
@@ -211,13 +212,20 @@ void function () {
     window.dispatchEvent(eventKeydown);
 
     // Keyup
+    setTimeout(function () {
+      return simulateKeyup(keyName);
+    }, 0);
+  };
+
+  utils.simulateKeyup = function (keyName) {
+    var keymap = utils.keymap;
+
+
     var eventKeyup = new Event('keyup');
     eventKeyup.key = keyName;
     eventKeyup.keyCode = keymap(keyName);
     eventKeyup.which = eventKeyup.keyCode;
-    setTimeout(function () {
-      return window.dispatchEvent(eventKeyup);
-    }, 0);
+    window.dispatchEvent(eventKeyup);
   };
 
   // Throttle
@@ -1369,7 +1377,7 @@ void function () {
       case 'UI/OpenStartPanel':
         return Object.assign({}, state, {
           panel: 'start',
-          panelActions: ['startGame', 'openKeyboardControlsModal', 'giveFeedback'],
+          panelActions: ['startGame', 'openKeyboardControlsModal', 'behindTheScenes'],
           onSelectAction: 'startGame'
         });
       case 'UI/OpenPausePanel':
@@ -1509,7 +1517,7 @@ void function () {
           ui: {
             panel: 'start',
             onSelectAction: 'startGame',
-            panelActions: ['startGame', 'openKeyboardControlsModal', 'giveFeedback'],
+            panelActions: ['startGame', 'openKeyboardControlsModal', 'behindTheScenes'],
             modal: null
           }
         };
@@ -1835,7 +1843,10 @@ void function () {
           _this12.onLoaded();
         };
 
-        if (sprite) options.sprite = sprite;
+        if (sprite) {
+          options.sprite = sprite;
+          options.volume = 0.7;
+        }
 
         this[type] = new Howl(options);
       }
@@ -2554,7 +2565,7 @@ void function () {
         var panelActions = ui.panelActions;
 
 
-        var actionTexts = ['Start Game', 'Keyboard Controls', 'Give Feedback'];
+        var actionTexts = ['Start Game', 'Keyboard Controls', 'Behind the Scenes'];
 
         return this.renderPanelWrap(panelActions.map(function (action, index) {
           return _this21.renderPanelButton(action, actionTexts[index]);
@@ -3248,6 +3259,8 @@ void function () {
     }, {
       key: 'handleSelect',
       value: function handleSelect() {
+        var simulateKeyup = utils.simulateKeyup;
+        var keyboardShortcuts = this.props.keyboardShortcuts;
         var _state2 = this.state,
             status = _state2.status,
             ui = _state2.ui;
@@ -3262,8 +3275,10 @@ void function () {
         soundManager.play('effects', 'click');
 
         switch (ui.onSelectAction) {
-          case 'giveFeedback':
-            return window.open(FEEDBACK_URL);
+          case 'behindTheScenes':
+            window.open(PRESENTATION_URL);
+            // @Hack: Fouce excute simulateKeyup
+            return simulateKeyup(keyboardShortcuts.select);
           case 'startGame':
             return this.start();
           case 'stopGame':
