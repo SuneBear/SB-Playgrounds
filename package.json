@@ -6,9 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "browser-sync start --server src --files src/**/*",
-    "copy": "cp -a src/. dist/",
+    "copy": "cp -a src/. dist/ && rm -rf ./dist/games/nfb-wayfinder",
+    "build-wayfinder": "parcel build src/games/nfb-wayfinder/index.html --out-dir dist/games/nfb-wayfinder --public-url /SB-Playgrounds/games/nfb-wayfinder/",
     "build-prw": "rm dist/games/peaceful-roguelike-wonderland/scripts.js && babel src/games/peaceful-roguelike-wonderland/scripts.js -o dist/games/peaceful-roguelike-wonderland/scripts.js -s  --presets es2015",
-    "deploy": "npm run copy && npm run build-prw && gh-pages -d dist"
+    "ghpages": "gh-pages -d dist",
+    "deploy": "npm run copy && npm run build-prw && npm run build-wayfinder  && gh-pages -d dist"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
