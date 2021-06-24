@@ -1,0 +1,173 @@
+{"frames": [
+
+{
+	"filename": "ground-assets/forest/forest_flower2",
+	"frame": {"x":586,"y":1138,"w":161,"h":193},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":193},
+	"sourceSize": {"w":161,"h":193}
+},
+{
+	"filename": "ground-assets/forest/mushroom2",
+	"frame": {"x":6,"y":6,"w":256,"h":263},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":263},
+	"sourceSize": {"w":256,"h":263}
+},
+{
+	"filename": "ground-assets/forest/smalltree1",
+	"frame": {"x":511,"y":220,"w":188,"h":262},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":188,"h":262},
+	"sourceSize": {"w":188,"h":262}
+},
+{
+	"filename": "ground-assets/forest/tree5",
+	"frame": {"x":6,"y":277,"w":210,"h":717},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":717},
+	"sourceSize": {"w":210,"h":717}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-FLOWER-1",
+	"frame": {"x":224,"y":904,"w":177,"h":354},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":177,"h":354},
+	"sourceSize": {"w":177,"h":354}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-FLOWER-2",
+	"frame": {"x":700,"y":546,"w":170,"h":288},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":288},
+	"sourceSize": {"w":170,"h":288}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-FLOWER-white-1",
+	"frame": {"x":700,"y":842,"w":170,"h":288},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":170,"h":288},
+	"sourceSize": {"w":170,"h":288}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-FLOWER-white-2",
+	"frame": {"x":224,"y":542,"w":178,"h":354},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":354},
+	"sourceSize": {"w":178,"h":354}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TALL-FLOWER-1",
+	"frame": {"x":6,"y":1407,"w":171,"h":571},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":571},
+	"sourceSize": {"w":171,"h":571}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TALL-FLOWER-3",
+	"frame": {"x":190,"y":1266,"w":169,"h":733},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":169,"h":733},
+	"sourceSize": {"w":169,"h":733}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-WILDFLOWER-4",
+	"frame": {"x":409,"y":1078,"w":169,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":169,"h":400},
+	"sourceSize": {"w":169,"h":400}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-WILDFLOWER-7",
+	"frame": {"x":511,"y":490,"w":181,"h":580},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":580},
+	"sourceSize": {"w":181,"h":580}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandflower1",
+	"frame": {"x":900,"y":274,"w":118,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":118,"h":216},
+	"sourceSize": {"w":118,"h":216}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandflower2",
+	"frame": {"x":707,"y":274,"w":185,"h":264},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":264},
+	"sourceSize": {"w":185,"h":264}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandflower4",
+	"frame": {"x":878,"y":546,"w":122,"h":208},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":208},
+	"sourceSize": {"w":122,"h":208}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass2",
+	"frame": {"x":6,"y":1002,"w":176,"h":397},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":176,"h":397},
+	"sourceSize": {"w":176,"h":397}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass4",
+	"frame": {"x":798,"y":6,"w":218,"h":260},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":218,"h":260},
+	"sourceSize": {"w":218,"h":260}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass7",
+	"frame": {"x":270,"y":220,"w":233,"h":314},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":233,"h":314},
+	"sourceSize": {"w":233,"h":314}
+},
+{
+	"filename": "ground-assets/grasslands/GROUP-LEAVES-5",
+	"frame": {"x":270,"y":6,"w":256,"h":206},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":206},
+	"sourceSize": {"w":256,"h":206}
+},
+{
+	"filename": "ground-assets/grasslands/GROUP-LEAVES-6",
+	"frame": {"x":534,"y":6,"w":256,"h":206},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":206},
+	"sourceSize": {"w":256,"h":206}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "temp_sprites-2.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":2048},
+	"scale": "0.7",
+	"related_multi_packs": [ "temp_sprites-0.json", "temp_sprites-1.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3cb5641729a1d67462ecce4142a5c6e3:362101cd71d3cce06828abc9cf574cf7:6337d4f0e81a73eeb27d5a3870f90bcb$"
+}
+}

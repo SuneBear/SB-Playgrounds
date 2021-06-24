@@ -1,0 +1,572 @@
+{"frames": [
+
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0000.png",
+	"frame": {"x":0,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0001.png",
+	"frame": {"x":390,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0002.png",
+	"frame": {"x":780,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0003.png",
+	"frame": {"x":1170,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0004.png",
+	"frame": {"x":1560,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0005.png",
+	"frame": {"x":1950,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0006.png",
+	"frame": {"x":2340,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0007.png",
+	"frame": {"x":2730,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0008.png",
+	"frame": {"x":3120,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0009.png",
+	"frame": {"x":3510,"y":0,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0010.png",
+	"frame": {"x":0,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0011.png",
+	"frame": {"x":390,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0012.png",
+	"frame": {"x":780,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0013.png",
+	"frame": {"x":1170,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0014.png",
+	"frame": {"x":1560,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0015.png",
+	"frame": {"x":1950,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0016.png",
+	"frame": {"x":2340,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0017.png",
+	"frame": {"x":2730,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0018.png",
+	"frame": {"x":3120,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0019.png",
+	"frame": {"x":3510,"y":390,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0020.png",
+	"frame": {"x":0,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0021.png",
+	"frame": {"x":390,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0022.png",
+	"frame": {"x":780,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0023.png",
+	"frame": {"x":1170,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0024.png",
+	"frame": {"x":1560,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0025.png",
+	"frame": {"x":1950,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0026.png",
+	"frame": {"x":2340,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0027.png",
+	"frame": {"x":2730,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0028.png",
+	"frame": {"x":3120,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0029.png",
+	"frame": {"x":3510,"y":780,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0030.png",
+	"frame": {"x":0,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0031.png",
+	"frame": {"x":390,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0032.png",
+	"frame": {"x":780,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0033.png",
+	"frame": {"x":1170,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0034.png",
+	"frame": {"x":1560,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0035.png",
+	"frame": {"x":1950,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0036.png",
+	"frame": {"x":2340,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0037.png",
+	"frame": {"x":2730,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0038.png",
+	"frame": {"x":3120,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0039.png",
+	"frame": {"x":3510,"y":1170,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0040.png",
+	"frame": {"x":0,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0041.png",
+	"frame": {"x":390,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0042.png",
+	"frame": {"x":780,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0043.png",
+	"frame": {"x":1170,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0044.png",
+	"frame": {"x":1560,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0045.png",
+	"frame": {"x":1950,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0046.png",
+	"frame": {"x":2340,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0047.png",
+	"frame": {"x":2730,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0048.png",
+	"frame": {"x":3120,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0049.png",
+	"frame": {"x":3510,"y":1560,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0050.png",
+	"frame": {"x":0,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0051.png",
+	"frame": {"x":390,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0052.png",
+	"frame": {"x":780,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0053.png",
+	"frame": {"x":1170,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0054.png",
+	"frame": {"x":1560,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0055.png",
+	"frame": {"x":1950,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0056.png",
+	"frame": {"x":2340,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0057.png",
+	"frame": {"x":2730,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0058.png",
+	"frame": {"x":3120,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0059.png",
+	"frame": {"x":3510,"y":1950,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0060.png",
+	"frame": {"x":0,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0061.png",
+	"frame": {"x":390,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0062.png",
+	"frame": {"x":780,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0063.png",
+	"frame": {"x":1170,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0064.png",
+	"frame": {"x":1560,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0065.png",
+	"frame": {"x":1950,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0066.png",
+	"frame": {"x":2340,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0067.png",
+	"frame": {"x":2730,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0068.png",
+	"frame": {"x":3120,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+},
+{
+	"filename": "ORIGIN-TREE-FINAL-12FPS-0069.png",
+	"frame": {"x":3510,"y":2340,"w":390,"h":390},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":390},
+	"sourceSize": {"w":390,"h":390}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tree-anim-c.png",
+	"format": "RGBA8888",
+	"size": {"w":3900,"h":2730},
+	"scale": "0.35",
+	"smartupdate": "$TexturePacker:SmartUpdate:0e331b34adbd3fb77c37edfaeb0897b9:4a36cd0b6f457fc7af238cce0bb57b24:c2a506586874b5bf4f4c7b515cec1c78$"
+}
+}

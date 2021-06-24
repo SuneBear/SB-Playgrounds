@@ -1,0 +1,197 @@
+{"frames": [
+
+{
+	"filename": "ground-assets/forest/fallen_wood1",
+	"frame": {"x":672,"y":992,"w":302,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":302,"h":100},
+	"sourceSize": {"w":302,"h":100}
+},
+{
+	"filename": "ground-assets/forest/fallen_wood2",
+	"frame": {"x":964,"y":731,"w":563,"h":218},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":563,"h":218},
+	"sourceSize": {"w":563,"h":218}
+},
+{
+	"filename": "ground-assets/forest/tree1",
+	"frame": {"x":1307,"y":6,"w":392,"h":717},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":392,"h":717},
+	"sourceSize": {"w":392,"h":717}
+},
+{
+	"filename": "ground-assets/forest/tree2",
+	"frame": {"x":1535,"y":731,"w":340,"h":717},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":340,"h":717},
+	"sourceSize": {"w":340,"h":717}
+},
+{
+	"filename": "ground-assets/forest/tree3",
+	"frame": {"x":1707,"y":6,"w":317,"h":636},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":317,"h":636},
+	"sourceSize": {"w":317,"h":636}
+},
+{
+	"filename": "ground-assets/forest/tree_lush_green1",
+	"frame": {"x":6,"y":1177,"w":441,"h":795},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":441,"h":795},
+	"sourceSize": {"w":441,"h":795}
+},
+{
+	"filename": "ground-assets/forest/tree_lush_red2",
+	"frame": {"x":399,"y":6,"w":446,"h":717},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":446,"h":717},
+	"sourceSize": {"w":446,"h":717}
+},
+{
+	"filename": "ground-assets/forest/tree_lush_yellow1",
+	"frame": {"x":853,"y":6,"w":446,"h":717},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":446,"h":717},
+	"sourceSize": {"w":446,"h":717}
+},
+{
+	"filename": "ground-assets/forest/tree_naked2",
+	"frame": {"x":6,"y":6,"w":385,"h":1163},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":385,"h":1163},
+	"sourceSize": {"w":385,"h":1163}
+},
+{
+	"filename": "ground-assets/forest/tree_naked3",
+	"frame": {"x":455,"y":1174,"w":356,"h":839},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":839},
+	"sourceSize": {"w":356,"h":839}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TALLPADS-2",
+	"frame": {"x":399,"y":992,"w":265,"h":174},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":265,"h":174},
+	"sourceSize": {"w":265,"h":174}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TALLPADS-3",
+	"frame": {"x":399,"y":731,"w":557,"h":253},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":557,"h":253},
+	"sourceSize": {"w":557,"h":253}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TANSY-WHITE-1",
+	"frame": {"x":1875,"y":1602,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TANSY-WHITE-3",
+	"frame": {"x":1883,"y":650,"w":157,"h":468},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":468},
+	"sourceSize": {"w":157,"h":468}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TANSY-YELLOW-1",
+	"frame": {"x":1883,"y":1126,"w":157,"h":468},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":468},
+	"sourceSize": {"w":157,"h":468}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-TANSY-YELLOW-2",
+	"frame": {"x":819,"y":1100,"w":154,"h":376},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":376},
+	"sourceSize": {"w":154,"h":376}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-WILDFLOWER-2",
+	"frame": {"x":1434,"y":1456,"w":400,"h":580},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":580},
+	"sourceSize": {"w":400,"h":580}
+},
+{
+	"filename": "ground-assets/grasslands/GRASSLAND-WILDFLOWER-8",
+	"frame": {"x":982,"y":957,"w":444,"h":547},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":444,"h":547},
+	"sourceSize": {"w":444,"h":547}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass3",
+	"frame": {"x":819,"y":1484,"w":95,"h":275},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":95,"h":275},
+	"sourceSize": {"w":95,"h":275}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass5",
+	"frame": {"x":1434,"y":1235,"w":83,"h":125},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":125},
+	"sourceSize": {"w":83,"h":125}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass9",
+	"frame": {"x":1434,"y":957,"w":50,"h":270},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":270},
+	"sourceSize": {"w":50,"h":270}
+},
+{
+	"filename": "ground-assets/grasslands/grasslandgrass10",
+	"frame": {"x":1842,"y":1456,"w":25,"h":247},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":247},
+	"sourceSize": {"w":25,"h":247}
+},
+{
+	"filename": "ground-assets/grasslands/oat-shadow1",
+	"frame": {"x":922,"y":1512,"w":472,"h":487},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":472,"h":487},
+	"sourceSize": {"w":472,"h":487}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "temp_sprites-0.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "0.7",
+	"related_multi_packs": [ "temp_sprites-1.json", "temp_sprites-2.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:3cb5641729a1d67462ecce4142a5c6e3:362101cd71d3cce06828abc9cf574cf7:6337d4f0e81a73eeb27d5a3870f90bcb$"
+}
+}

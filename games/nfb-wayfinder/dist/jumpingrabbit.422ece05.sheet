@@ -1,0 +1,308 @@
+{"frames": [
+
+{
+	"filename": "rabbit-white-0000.png",
+	"frame": {"x":1,"y":1,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0001.png",
+	"frame": {"x":193,"y":1,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0002.png",
+	"frame": {"x":385,"y":1,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0003.png",
+	"frame": {"x":577,"y":1,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0004.png",
+	"frame": {"x":769,"y":1,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0005.png",
+	"frame": {"x":1,"y":85,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0006.png",
+	"frame": {"x":193,"y":85,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0007.png",
+	"frame": {"x":385,"y":85,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0008.png",
+	"frame": {"x":577,"y":85,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0009.png",
+	"frame": {"x":769,"y":85,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0010.png",
+	"frame": {"x":1,"y":169,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0011.png",
+	"frame": {"x":193,"y":169,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0012.png",
+	"frame": {"x":385,"y":169,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0013.png",
+	"frame": {"x":577,"y":169,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0014.png",
+	"frame": {"x":769,"y":169,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0015.png",
+	"frame": {"x":1,"y":253,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0016.png",
+	"frame": {"x":193,"y":253,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0017.png",
+	"frame": {"x":385,"y":253,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0018.png",
+	"frame": {"x":577,"y":253,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0019.png",
+	"frame": {"x":769,"y":253,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0020.png",
+	"frame": {"x":1,"y":337,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0021.png",
+	"frame": {"x":193,"y":337,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0022.png",
+	"frame": {"x":385,"y":337,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0023.png",
+	"frame": {"x":577,"y":337,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0024.png",
+	"frame": {"x":769,"y":337,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0025.png",
+	"frame": {"x":1,"y":421,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0026.png",
+	"frame": {"x":193,"y":421,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0027.png",
+	"frame": {"x":385,"y":421,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0028.png",
+	"frame": {"x":577,"y":421,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0029.png",
+	"frame": {"x":769,"y":421,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0030.png",
+	"frame": {"x":1,"y":505,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0031.png",
+	"frame": {"x":193,"y":505,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0032.png",
+	"frame": {"x":385,"y":505,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0033.png",
+	"frame": {"x":577,"y":505,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0034.png",
+	"frame": {"x":769,"y":505,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0035.png",
+	"frame": {"x":1,"y":589,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+},
+{
+	"filename": "rabbit-white-0036.png",
+	"frame": {"x":193,"y":589,"w":190,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":82},
+	"sourceSize": {"w":190,"h":82}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "jumpingrabbit.png",
+	"format": "RGBA8888",
+	"size": {"w":960,"h":672},
+	"scale": "0.1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5b34d6ce463fdfb2703af4dea00514fa:bbeb5b3721ce3610d570e1e64727a1f4:91a5f5bcbcf121d8fd4405a6d45e447c$"
+}
+}

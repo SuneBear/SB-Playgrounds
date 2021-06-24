@@ -8720,6 +8720,7 @@ document.documentElement.classList.add('enhanced');
         )
       }
       _updateMatrix() {
+        // Material Module Ids: 163 - 170
         console.log('Component exp display', this)
         this.camera.fov = 2 * Math.atan(this.stickyHeight / 2 / this.perspective) * (180 / Math.PI),
         this.camera.aspect = this.stickyWidth / this.stickyHeight,

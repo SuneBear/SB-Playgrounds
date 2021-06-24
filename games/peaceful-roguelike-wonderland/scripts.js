@@ -138,10 +138,9 @@ void function () {
       39: 'rightArrow',
       40: 'downArrow',
       46: 'delete'
-    };
 
-    // Append numbers
-    for (var i = 48; i < 58; i++) {
+      // Append numbers
+    };for (var i = 48; i < 58; i++) {
       keyCodesMap[i] = i - 48;
     } // Append low case alphabets
     for (var _i = 97; _i < 123; _i++) {
@@ -939,13 +938,12 @@ void function () {
     Never: 2,
     IfAtMostOneObstacle: 3,
     OnlyWhenNoObstacles: 4
-  };
 
-  /**
-   * Heuristic
-   */
+    /**
+     * Heuristic
+     */
 
-  var heuristic = {};
+  };var heuristic = {};
 
   heuristic.manhattan = function (dx, dy) {
     return dx + dy;
@@ -1335,41 +1333,29 @@ void function () {
   reducers.places = function (state, action) {
     var placeIndex = action.placeIndex;
 
-    var _ret = function () {
 
-      switch (action.type) {
-        case 'Places/AddPlace':
-          var place = action.place;
+    switch (action.type) {
+      case 'Places/AddPlace':
+        var place = action.place;
 
-          return {
-            v: state.concat([place])
-          };
-        case 'Place/Update':
-          var newPlace = action.newPlace;
+        return state.concat([place]);
+      case 'Place/Update':
+        var newPlace = action.newPlace;
 
-          return {
-            v: state.map(function (place) {
-              if (place.index !== placeIndex) return place;
-              return Object.assign({}, place, newPlace);
-            })
-          };
-        case 'Place/Map/Update':
-          var newPlaceMap = action.newPlaceMap;
+        return state.map(function (place) {
+          if (place.index !== placeIndex) return place;
+          return Object.assign({}, place, newPlace);
+        });
+      case 'Place/Map/Update':
+        var newPlaceMap = action.newPlaceMap;
 
-          return {
-            v: state.map(function (place) {
-              if (place.index !== placeIndex) return place;
-              return Object.assign({}, place, { map: newPlaceMap });
-            })
-          };
-        default:
-          return {
-            v: state
-          };
-      }
-    }();
-
-    if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+        return state.map(function (place) {
+          if (place.index !== placeIndex) return place;
+          return Object.assign({}, place, { map: newPlaceMap });
+        });
+      default:
+        return state;
+    }
   };
 
   reducers.ui = function (state, action) {
