@@ -1,0 +1,324 @@
+{"frames": [
+
+{
+	"filename": "Fox-2-0030.png",
+	"frame": {"x":1,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0031.png",
+	"frame": {"x":1,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0032.png",
+	"frame": {"x":1,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0033.png",
+	"frame": {"x":1,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0034.png",
+	"frame": {"x":1,"y":361,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0035.png",
+	"frame": {"x":153,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0036.png",
+	"frame": {"x":153,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0037.png",
+	"frame": {"x":153,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0038.png",
+	"frame": {"x":153,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0039.png",
+	"frame": {"x":153,"y":361,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0040.png",
+	"frame": {"x":305,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0041.png",
+	"frame": {"x":305,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0042.png",
+	"frame": {"x":305,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0043.png",
+	"frame": {"x":305,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0044.png",
+	"frame": {"x":305,"y":361,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0045.png",
+	"frame": {"x":457,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0046.png",
+	"frame": {"x":457,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0047.png",
+	"frame": {"x":457,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0048.png",
+	"frame": {"x":457,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0049.png",
+	"frame": {"x":457,"y":361,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0050.png",
+	"frame": {"x":609,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0051.png",
+	"frame": {"x":609,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0052.png",
+	"frame": {"x":609,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0053.png",
+	"frame": {"x":609,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0054.png",
+	"frame": {"x":609,"y":361,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0055.png",
+	"frame": {"x":761,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0056.png",
+	"frame": {"x":761,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0057.png",
+	"frame": {"x":761,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0058.png",
+	"frame": {"x":761,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0059.png",
+	"frame": {"x":761,"y":361,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0060.png",
+	"frame": {"x":913,"y":1,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0061.png",
+	"frame": {"x":913,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0062.png",
+	"frame": {"x":913,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0063.png",
+	"frame": {"x":913,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0064.png",
+	"frame": {"x":913,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0065.png",
+	"frame": {"x":913,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0066.png",
+	"frame": {"x":913,"y":91,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0067.png",
+	"frame": {"x":913,"y":181,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+},
+{
+	"filename": "Fox-2-0068.png",
+	"frame": {"x":913,"y":271,"w":150,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":88},
+	"sourceSize": {"w":150,"h":88}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "fox_wakesup.png",
+	"format": "RGBA8888",
+	"size": {"w":1064,"h":450},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:82c6def8d92446dae63ed75b39c51106:1f8f03f7f61d719174fd2a7403eecd86:c62c53b5171fbc106647aab927a77c9e$"
+}
+}
