@@ -314,9 +314,11 @@ export default function TokenPlacementSystem(world) {
       getSpriteGeometry(),
       createTokenMaterial(bloom, false)
     );
+    sprite.layers.set(renderLayers.groundNormalElement)
     sprite.renderOrder = 10;
     sprite.userData.alpha = 1;
     sprite.name = "token";
+    sprite
 
     const shadow = new THREE.Sprite(
       new THREE.SpriteMaterial({

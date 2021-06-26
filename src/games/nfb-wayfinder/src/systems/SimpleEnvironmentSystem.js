@@ -524,7 +524,7 @@ export default function SimpleEnvironmentSystem(world) {
     //     wrapS: THREE.RepeatWrapping,
     //     wrapT: THREE.RepeatWrapping,
     //   };
-    //   Assets.loadGPUTexture(renderer, waterDistortMap, WATER_DISTORT, repeat);
+      // Assets.loadGPUTexture(renderer, waterDistortMap, WATER_DISTORT, repeat);
     //   Assets.loadGPUTexture(renderer, waterNoiseMap, WATER_NOISE, repeat);
     // }
     return createEnvironmentEntity(world, {

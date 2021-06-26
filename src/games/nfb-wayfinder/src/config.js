@@ -16,6 +16,7 @@ export default function getConfig() {
     config.context.canvas.style.display = "none";
   }
 
+  config.embed = false;
   config.haikusPerBiome = 2;
 
   return config;

@@ -41,6 +41,7 @@ export default function SubmitFrameSystem(world, opt = {}) {
   const groundWidth = 768;
 
   const shouldDrawGround = queryString.ground !== false;
+  const shouldDrawGroundNormalElement = queryString.groundNormalElement !== false;
   const shouldUseFloat = queryString.float !== false;
   const shouldUsePost = queryString.post !== false;
   const canUseFloat =
@@ -119,7 +120,7 @@ export default function SubmitFrameSystem(world, opt = {}) {
       }
       void main () {
         vec3 rgb = texture2D(map, vUv).rgb;
-        
+
         #ifdef HAS_FLOAT
           vec3 col;
           col.r = rgb.r > 1.0 ? rgb.r : 0.0;
@@ -378,15 +379,21 @@ export default function SubmitFrameSystem(world, opt = {}) {
       camera.layers.enable(renderLayers.ground);
     }
     camera.layers.enable(renderLayers.groundDepth);
+    if (shouldDrawGroundNormalElement) {
+      camera.layers.enable(renderLayers.groundNormalElement);
+      camera.layers.enable(renderLayers.shadow);
+    }
     camera.layers.enable(renderLayers.water);
 
     // renderer.render(scene, camera);
 
     // camera.layers.disableAll();
-    camera.layers.enable(renderLayers.shadow);
     drawShadows(scene, camera);
 
     camera.layers.enableAll();
+    if (!shouldDrawGroundNormalElement) {
+      camera.layers.disable(renderLayers.groundNormalElement);
+    }
     // camera.layers.disable(GLOW_LAYER);
     camera.layers.disable(renderLayers.water);
     camera.layers.disable(renderLayers.shadow);

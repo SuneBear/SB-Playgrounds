@@ -108,6 +108,7 @@ export default function EnvironmentGroundRenderTextureSystem(world) {
     groundPlaneTag.projectionMatrix.copy(mainCamera.projectionMatrix);
     mainCamera.layers.disableAll();
     mainCamera.layers.enable(renderLayers.ground);
+    mainCamera.layers.disable(renderLayers.goundNormalElement);
     mainCamera.layers.disable(renderLayers.groundDepth);
     tmpColor.copy(renderer.getClearColor());
     renderer.setRenderTarget(renderTarget);

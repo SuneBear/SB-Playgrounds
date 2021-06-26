@@ -812,8 +812,10 @@ export class RenderLayers extends Data {
   static data = {
     groundDepth: Types.Ref(4),
     ground: Types.Ref(5),
-    water: Types.Ref(6),
+    groundNormalElement: Types.Ref(6),
+    water: Types.Ref(7),
     grass: Types.Ref(10),
+    animal: Types.Ref(11),
     // elements: Types.Ref(12),
     shadow: Types.Ref(15),
     atmospherics: Types.Ref(25),

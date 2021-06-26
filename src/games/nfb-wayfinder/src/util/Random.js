@@ -13,7 +13,7 @@ const embed = getConfig().embed;
 const TRUE_RANDOM = !embed && !queryString.deterministic;
 const SEED_STATE = new Uint16Array(
   embed ? [39783, 27946, 21768, 27541] : [9697, 37140, 38490, 15272]
-);
+  );
 console.log("Random Seed:", [...SEED_STATE]);
 const SEED_PCG = PCG(SEED_STATE);
 

@@ -273,6 +273,7 @@ async function initializeGame(world, initEntity) {
 
   await world.addSystem(ProceduralSpawningLeaves);
   world.addSystem(ProceduralSpawningDots);
+  // world.addSystem(TallGrassSystem);
   if (!config.embed) world.addSystem(OriginTreeSystem);
   if (!config.embed) world.addSystem(OriginTreeIntroSystem);
   world.addSystem(TutorialMessageSystem);
@@ -290,7 +291,7 @@ async function initializeGame(world, initEntity) {
   world.addSystem(WindAtmosphereSystem);
   world.addSystem(SnowAtmosphereSystem);
   world.addSystem(AnimalSpawnSystem);
-  world.addSystem(HaikuFloraSystem);
+  // world.addSystem(HaikuFloraSystem);
 
   // world.addSystem(ScreenCompassSystem);
   world.addSystem(CompassSystem);

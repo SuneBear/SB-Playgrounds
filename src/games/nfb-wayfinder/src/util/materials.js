@@ -193,6 +193,8 @@ export function createMeshMaterial(world, mesh, { map, ignoreGround = false }) {
   const groundProjectionMatrix = groundView.projectionMatrix;
   mesh.updateMatrix();
   mesh.updateMatrixWorld();
+  const renderLayers = world.findTag(Tags.RenderLayers);
+  mesh.layers.set(renderLayers.groundNormalElement);
 
   const bounds = new THREE.Box3().setFromObject(mesh);
   const oldMat = mesh.material;

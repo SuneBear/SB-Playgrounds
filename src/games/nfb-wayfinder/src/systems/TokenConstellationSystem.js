@@ -145,6 +145,7 @@ export default function TokenConstellationSystem(world) {
       m.userData.finalScale = 1;
       m.userData._entity = null;
       updateSphereScale(m);
+      m.layers.set(renderLayers.groundNormalElement)
       return m;
     },
     renew(m) {

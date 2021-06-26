@@ -236,6 +236,8 @@ export default function UserFollowSystem(world) {
     userFollow.currentTarget.copy(currentTarget);
     camera.lookAt(currentTarget);
     camera.position.add(postOffset);
+    // camera.position.z = 120;
+    // camera.position.y = 100;
     camera.fov = curPreset.fov;
     camera.near = curPreset.near;
     camera.far = curPreset.far;

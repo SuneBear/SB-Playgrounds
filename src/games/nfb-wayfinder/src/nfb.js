@@ -4,7 +4,7 @@ import { language } from "./util/locale.js";
 import { audioState } from "./util/stores.js";
 
 // const UA_ACCOUNTS = ["UA-32257069-1", "UA-124182036-7"];
-const UA_ACCOUNTS = ["UA-124182036-7"];
+const UA_ACCOUNTS = [];
 const PROJECT_NAME = "wayfinder";
 const USE_HEADER = true;
 
@@ -64,12 +64,12 @@ export async function hideHeader() {
 }
 
 export async function sendAnalytics(opt = {}) {
+  console.log("[analytics] Sending", opt);
   await promise;
   if (
     typeof google_analytics !== "undefined" &&
     typeof google_analytics.gaTrack === "function"
   ) {
-    console.log("[analytics] Sending", opt);
     const curLang = language.get();
     try {
       UA_ACCOUNTS.forEach((ua_code) => {

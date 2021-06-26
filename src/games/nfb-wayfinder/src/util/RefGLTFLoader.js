@@ -526,6 +526,7 @@ export default async function RefLoader(world) {
       child.userData._entity.kill();
       console.error("ERROR: Entity already existed on child, removing it.");
     }
+    child.layers.set(world.findTag(Tags.RenderLayers).groundNormalElement)
 
     const tag = child.userData ? child.userData.tag : null;
     const ignoreShadow = tag ? tag.includes("noshadow") : false;
@@ -596,6 +597,7 @@ export default async function RefLoader(world) {
       const ignoreGround = tag
         ? tag.includes("noshadow") || tag.includes("noground")
         : false;
+
       if (ignoreGround) {
         child.material.alphaTest = 0.5;
         child.material.transparent = true;
