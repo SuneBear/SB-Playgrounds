@@ -480,7 +480,7 @@ export default function OriginTreeSystem(world) {
         void main () {
           vUv = uv;
           vec3 transformed = position.xyz;
-          
+
           vColor = instanceColor;
           vec3 worldCenter = (modelMatrix * vec4(vec3(instancePosition), 1.0)).xyz;
 

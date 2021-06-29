@@ -9,7 +9,7 @@ export default function AnimalSpawnSystem(world) {
 
   const types = {
     forest: ["bird"],
-    grasslands: ["butterfly"],
+    grasslands: ['seal', "butterfly", 'owl'],
     tundra: ["jumpingrabbit"],
   };
 

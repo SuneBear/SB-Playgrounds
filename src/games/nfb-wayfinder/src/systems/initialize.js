@@ -291,7 +291,7 @@ async function initializeGame(world, initEntity) {
   world.addSystem(WindAtmosphereSystem);
   world.addSystem(SnowAtmosphereSystem);
   world.addSystem(AnimalSpawnSystem);
-  // world.addSystem(HaikuFloraSystem);
+  world.addSystem(HaikuFloraSystem);
 
   // world.addSystem(ScreenCompassSystem);
   world.addSystem(CompassSystem);
@@ -301,8 +301,8 @@ async function initializeGame(world, initEntity) {
   world.addSystem(GroundBirdsSystem);
   world.addSystem(ButterflySystem);
   // world.addSystem(RabbitSystem);
-  // world.addSystem(SealSystem);
-  // world.addSystem(OwlSystem);
+  world.addSystem(SealSystem);
+  world.addSystem(OwlSystem);
   world.addSystem(FoxSystem);
   world.addSystem(FishSystem);
   world.addSystem(JumpingRabbitSystem);

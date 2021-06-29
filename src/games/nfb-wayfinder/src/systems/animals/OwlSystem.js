@@ -84,7 +84,6 @@ export default async function OwlSystem(world) {
       const s = e.get(Tags.AnimalSpawn);
       if (
         view.length < maxOnScreen &&
-        s.biome === "forest" &&
         s.animal === "owl" &&
         !s.lake
       ) {
@@ -121,7 +120,7 @@ export default async function OwlSystem(world) {
         d.currentAnimation.stop()
         d.currentAnimation.play()
         mesh.material = d.currentAnimation.getMaterial();
-      } 
+      }
       else if (distToUser > 4 && d.state == "wakeup" && d.currentAnimation.currentFrame > 47) {
         d.state = "sleep";
         d.currentAnimation = d.sleepAnimation;

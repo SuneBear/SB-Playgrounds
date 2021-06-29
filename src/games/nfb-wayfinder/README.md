@@ -21,6 +21,7 @@ Playground Link: https://sunebear.github.io/SB-Playgrounds/games/nfb-wayfinder
 | tags   | Object | the all tags map, eg: `world.findTag(Tags.MainCamera)` |
 | swapEnv()   | Function | swap current biome |
 | drift()   | Function | drift camera in promo mode |
+| printStats()   | Function | print renderer info |
 
 
 #### QueryString
@@ -34,7 +35,8 @@ Playground Link: https://sunebear.github.io/SB-Playgrounds/games/nfb-wayfinder
 | initial | null, journal | set page state |
 | resolve | false, true | resolve current biome |
 | deterministic | false, true | enable PRNG |
-| zoom | false, true | enable zoom, use  `mouse wheel or number 1-4`  |
+| zoom | false, true | enable zoom, use  `mouse wheel`  |
+| view | 2.5d, god, fp | switch different views, or use `number 1-3` |
 | ground | true, false | should draw groud |
 | groundNormalElement | true, false | should draw groundNormalElement |
 | float | true, false | should use float effect |

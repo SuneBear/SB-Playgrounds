@@ -8,6 +8,7 @@ import queryString from "../util/query-string";
 // import CameraEditor from "../editor/CameraEditor";
 
 window.zoomLevel = 1;
+let viewType = queryString.view || '2.5d'
 
 const noise = new SimplexNoise(0);
 
@@ -51,9 +52,8 @@ export default function UserFollowSystem(world) {
 
   let presets = [
     { zoom: 2.5, fov: 15, near: 30, far: 150 },
-    { zoom: 2, fov: 20, near: 30, far: 100 },
-    { zoom: 1.75, fov: 25, near: 20, far: 100 },
-    { zoom: 1.33, fov: 30, near: 1, far: 1500 },
+    { zoom: 1.33, fov: 30, near: 1, far: 1000 },
+    { zoom: 2.4, fov: 10, near: 30, far: 400 }
   ];
 
   let curPreset = presets[0];
@@ -61,11 +61,19 @@ export default function UserFollowSystem(world) {
     window.addEventListener("keydown", (ev) => {
       const c = ev.key;
       const idx = parseInt(c, 10) - 1;
-      if (idx >= 0 && idx < presets.length) {
-        const userZoom = world.findTag(Tags.UserZoom);
-        if (idx === 0) userZoom.distance = userZoom.defaultDistance;
 
-        curPreset = presets[idx];
+      if (idx === 0) {
+        viewType = '2.5d'
+      } else if (idx === 1) {
+        viewType = 'god'
+      } else if (idx === 2){
+        viewType = 'fp'
+      }
+
+      if (idx >= 0) {
+        const userZoom = world.findTag(Tags.UserZoom);
+        userZoom.distance = userZoom.defaultDistance;
+        curPreset = presets[idx < presets.length ? idx : 0];
       }
     });
   }
@@ -236,8 +244,14 @@ export default function UserFollowSystem(world) {
     userFollow.currentTarget.copy(currentTarget);
     camera.lookAt(currentTarget);
     camera.position.add(postOffset);
-    // camera.position.z = 120;
-    // camera.position.y = 100;
+
+    if (viewType === 'god') {
+      camera.position.y = 70
+    } else if (viewType === 'fp') {
+      camera.position.z += 6
+      camera.position.y = 6
+    }
+
     camera.fov = curPreset.fov;
     camera.near = curPreset.near;
     camera.far = curPreset.far;

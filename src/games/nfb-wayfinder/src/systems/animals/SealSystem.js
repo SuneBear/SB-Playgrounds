@@ -3,6 +3,7 @@ import { Data, Types } from "../../tags";
 import * as THREE from "three";
 import { TextureLoader } from "three";
 import Random from "../../util/Random";
+import { createSpriteMaterial } from "../../util/materials";
 import spriteURL from "../../assets/spritesheets/seal.png";
 import * as MathUtil from "../../util/math";
 import SpriteAnimation from "../../util/SpriteAnimation";
@@ -45,7 +46,9 @@ class Seal extends Data {
 export default async function SealSystem(world) {
   const texture = await loadTexture(spriteURL);
 
-  const geometry = new THREE.PlaneBufferGeometry(1.07, 0.77);
+
+  const scaleFactor = 0.6
+  const geometry = new THREE.PlaneBufferGeometry(1.07 * scaleFactor, 0.77 * scaleFactor);
 
   const random = Random();
 
@@ -116,19 +119,23 @@ export default async function SealSystem(world) {
       const t = MathUtil.clamp01(d.time / d.animateInDuration);
       mesh.scale.setScalar(t * d.size);
 
-      material.uniforms.uLeft.value = d.left;
-      material.uniforms.uRotation.value = MathUtil.degToRad(0);
+      // material.uniforms.uLeft.value = d.left;
+      // material.uniforms.uRotation.value = MathUtil.degToRad(0);
     });
   };
 
   // Triggers a new entity in the world
-  function spawn(camera, position) {
+  function spawn(camera, pos) {
     const anim = new SpriteAnimation(sheetData, null);
     anim.texture = texture;
     anim.makeMaterial();
 
-    const material = anim.getMaterial();
-    const mesh = new THREE.Mesh(geometry, anim.getMaterial());
+    const user = world.findTag(Tags.UserCharacter);
+    const position = user.position;
+
+    const mesh = new THREE.Mesh(geometry, createSpriteMaterial(world));
+    mesh.material.uniforms.map.value = texture;
+
     mesh.position.copy(position);
     mesh.position.y = 1;
 
