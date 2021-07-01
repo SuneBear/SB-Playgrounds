@@ -22,6 +22,7 @@ Playground Link: https://sunebear.github.io/SB-Playgrounds/games/nfb-wayfinder
 | swapEnv()   | Function | swap current biome |
 | drift()   | Function | drift camera in promo mode |
 | printStats()   | Function | print renderer info |
+| addTestPoem()   | Function | quickly collect a poem |
 
 
 #### QueryString
@@ -72,6 +73,7 @@ Tips: sprite and model are both three.js meshes, but using different materials t
 - Rain Atmosphere: Emit under water & lake -> Raindrop (CapsuleBufferGeometry) + Rain Ripple (RingGeometry)
 - Follow Player Effect: Get UserTarget & EnvironmentUnderPlayerState & GroundDataRenderTarget, trigger particles or animations, such as animal movements, water bubbles, plant collisions
 - Lake & Water: Generate Lakes GEO Data (Contours + Bounds) -> WaterMesh:Fill  + Noise Texture:Cells + Distort Texture:Outlines + WaterCollcetionSystem:Bubbles + GroundDataRenderTarget:Ripples
+- Haiku Flora: Spawn flowers when character has following paperer -> The sprites use the scale transition for enter/leave, each object has unique scaler, height, flip
 
 ### Refs
 
