@@ -50,7 +50,7 @@
     "simplify-path": "^1.1.0",
     "stackblur": "^1.0.0",
     "svelte": "^3.31.0",
-    "three": "^0.129.0",
+    "three": "^0.137.0",
     "three-quaternion-from-normal": "^1.0.0",
     "tinyqueue": "^2.0.3",
     "tween-ticker": "^3.3.2",
